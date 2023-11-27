@@ -1,0 +1,52 @@
+* {
+  font-family: "OpenSans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1e3f0, 20%;
+}
+
+/* HEADER */
+
+header {
+  display: flex; /* pay attention to this next time; it's not taking up the full width, margin of the body should also be 0 */
+  align-items: center;
+  justify-content: space-between;
+  background-color: #a295c8;
+  width: 100%; /* ensure that the inline of the header takes up the full width of the viewport */
+  padding: 20px; /* padding and box-sizing, border-box help control the spacing within header */
+  box-sizing: border-box;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 2rem;
+}
+
+.left-items {
+  display: flex;
+  list-style: none;
+}
+
+.right-items {
+  display: flex;
+  list-style: none;
+}
+
+.logo {
+  width: 180px;
+  align-items: center;
+  cursor: pointer;
+}
+
+a {
+  color: #393b65;
+  text-decoration: none;
+}

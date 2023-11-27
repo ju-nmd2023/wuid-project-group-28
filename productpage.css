@@ -19,11 +19,7 @@ nav {
   padding: 10px 0;
   justify-content: space-between;
 }
-.logo {
-  width: 180px;
-  align-items: center;
-  cursor: pointer;
-}
+
 nav ul {
   list-style: none;
   width: 100%;
