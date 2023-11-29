@@ -1,6 +1,6 @@
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   font-family: "OpenSans", sans-serif;
   box-sizing: border-box;
 }
@@ -14,44 +14,54 @@ body {
 /* HEADER */
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
   background-color: #a295c8;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.header-container {
+.navbar {
   display: flex;
-  justify-content: space-between; /* adds space between the nav items and the logo */
-  align-items: center; /* it will vertically align the items within the header-container */
-  width: 100%; /* 100% of the header. It ensures that the header-container will take up the entire width of header */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 ul {
   display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
+  flex: 1;
+  justify-content: space-between;
 }
 
 li {
-  margin: 2rem;
+  margin-inline: 5rem;
 }
 
-/* Nav items: These classes are used to style the nav items.*/
+.left-items {
+  display: flex;
+  list-style: none;
+  flex: 1;
+}
 
-.left-items,
 .right-items {
-  display: flex; /* flexbox for nav items */
-  align-items: center; /* vertically align items in the center */
+  display: flex;
+  list-style: none;
+  flex: 1;
 }
 
 .logo {
-  width: 150px;
-  margin: 0 20px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 a {
   color: #393b65;
   text-decoration: none;
 }
+
+/* Side Menu Bar */
