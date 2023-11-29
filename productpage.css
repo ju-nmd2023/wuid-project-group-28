@@ -5,51 +5,53 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1e3f0, 20%;
+}
+
 /* HEADER*/
 
 header {
-  position: absolute;
-  background-color: #a294c7;
-  width: 100%;
+  background-color: #a295c8;
+  padding: 20px;
+  box-sizing: border-box;
 }
-/*.container{
-    padding: 10px 10%;
-  }*/
 
 nav {
   display: flex;
-  align-items: baseline;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .logo {
   width: 180px;
+  display: flex;
   align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 nav ul {
+  display: flex;
   list-style: none;
-  width: 100%;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  justify-content: space-between;
 }
-nav ul li {
-  display: inline-block;
-  float: left;
-  margin-left: 50px;
-  margin-bottom: 20px;
-}
-nav ul li a {
+
+.left-items {
   color: #393b65;
   text-decoration: none;
-  padding: 12px;
+  display: flex;
+  list-style: none;
+  flex: 1;
 }
-.SAC {
-  display: inline-block;
-  padding-left: 80px;
-  margin-bottom: 20px;
-}
-i {
+.right-items {
   color: #393b65;
-} /*to add icons from the internet without downloading/making them manually, need to put a link to html*/
-
-.fa-solid fa-bars {
-  font-size: 28px;
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+  flex: 1;
 }
