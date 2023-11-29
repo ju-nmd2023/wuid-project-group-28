@@ -40,9 +40,7 @@ nav ul {
   flex: 1;
   justify-content: space-between;
 }
-li {
-  margin-inline: 5rem;
-}
+
 .left-items {
   color: #393b65;
   text-decoration: none;
