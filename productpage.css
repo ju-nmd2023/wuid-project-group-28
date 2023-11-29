@@ -4,6 +4,9 @@
   font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
+
+/* HEADER*/
+
 header {
   position: absolute;
   background-color: #a294c7;
@@ -15,8 +18,7 @@ header {
 
 nav {
   display: flex;
-  align-items: center;
-  padding: 10px 0;
+  align-items: baseline;
   justify-content: space-between;
 }
 .logo {
@@ -27,18 +29,27 @@ nav {
 nav ul {
   list-style: none;
   width: 100%;
-  text-align: justify;
-  padding: 20px;
 }
 nav ul li {
   display: inline-block;
-  margin: 10px 20px;
+  float: left;
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
 nav ul li a {
   color: #393b65;
   text-decoration: none;
+  padding: 12px;
 }
-li.SAC {
-  text-align: center;
-  padding-left: 100px;
+.SAC {
+  display: inline-block;
+  padding-left: 80px;
+  margin-bottom: 20px;
+}
+i {
+  color: #393b65;
+} /*to add icons from the internet without downloading/making them manually, need to put a link to html*/
+
+.fa-solid fa-bars {
+  font-size: 28px;
 }
