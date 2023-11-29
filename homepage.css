@@ -14,19 +14,18 @@ body {
 /* HEADER */
 
 header {
-  display: flex; /* pay attention to this next time; it's not taking up the full width, margin of the body should also be 0 */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
+  height: 150px;
   background-color: #a295c8;
-  width: 100%; /* ensure that the inline of the header takes up the full width of the viewport */
-  padding: 20px; /* padding and box-sizing, border-box help control the spacing within header */
-  box-sizing: border-box;
 }
 
-nav {
+.header-container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* adds space between the nav items and the logo */
+  align-items: center; /* it will vertically align the items within the header-container */
+  width: 100%; /* 100% of the header. It ensures that the header-container will take up the entire width of header */
 }
 
 ul {
@@ -39,20 +38,17 @@ li {
   margin: 2rem;
 }
 
-.left-items {
-  display: flex;
-  list-style: none;
-}
+/* Nav items: These classes are used to style the nav items.*/
 
+.left-items,
 .right-items {
-  display: flex;
-  list-style: none;
+  display: flex; /* flexbox for nav items */
+  align-items: center; /* vertically align items in the center */
 }
 
 .logo {
-  width: 180px;
-  align-items: center;
-  cursor: pointer;
+  width: 150px;
+  margin: 0 20px;
 }
 
 a {
