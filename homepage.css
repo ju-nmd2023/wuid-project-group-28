@@ -11,6 +11,8 @@ body {
   background-color: #f1e3f084;
 }
 
+/* Header */
+
 .left-items1 {
   text-decoration: none;
   display: flex;
@@ -91,12 +93,6 @@ i {
   }
   .right-items {
     padding-left: 80px;
-  }
-}
-
-@media (min-width: 393px) {
-  .right-items {
-    padding: 0px;
   }
 }
 
