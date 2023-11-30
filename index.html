@@ -12,41 +12,54 @@
     <script src="homepage.js" defer></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="navbar">
-          <ul>
-            <div class="left-items">
-              <a href="">
-                <li>Menu</li>
-              </a>
-              <a href="">
-                <li>About</li>
-              </a>
-              <a href="">
-                <li>Contact</li>
-              </a>
-            </div>
-          </ul>
-          <ul>
-            <img src="logo/VelvetSkin logo_Rityta 1 copy.png" class="logo" />
-          </ul>
-          <ul>
-            <div class="right-items">
-              <a href="">
-                <li>Search</li>
-              </a>
-              <a href="">
-                <li>Account</li>
-              </a>
-              <a href="">
-                <li>Cart</li>
-              </a>
-            </div>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="22"
+              viewBox="0 -960 960 960"
+              width="22"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#Explore">Explore</a></li>
+        <li><a href="#About">About</a></li>
+        <li>
+          <a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a>
+        </li>
+        <li><a href="#">Costumer Service</a></li>
+        <li><a href="#">Login/Sign in</a></li>
+      </ul>
+      <ul>
+        <li onclick="showSidebar()">
+          <a href="#"><i class="fa-solid fa-bars"></i>Menu</a>
+        </li>
+        <li class="left-items1"><a href="#">About</a></li>
+        <li class="left-items1"><a href="#">Contact</a></li>
+      </ul>
+      <img src="logo/VelvetSkin logo_Rityta 1 copy.png" class="logo" />
+      <ul>
+        <li class="right-items1">
+          <a href="#Search"
+            ><i class="fa-solid fa-magnifying-glass"></i>Search</a
+          >
+        </li>
+        <li class="right-items1">
+          <a href="#Account"><i class="fa-regular fa-user"></i>Account</a>
+        </li>
+        <li class="right-items">
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+        </li>
+      </ul>
+    </nav>
 
     <main>
       <p>hello world</p>
