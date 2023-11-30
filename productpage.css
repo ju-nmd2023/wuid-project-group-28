@@ -8,25 +8,27 @@ html {
 body {
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
-  background-color: #f1e3f0, 20%;
+  background-color: #f1e3f084;
 }
 
-.left-items {
+.left-items1 {
   text-decoration: none;
   display: flex;
   justify-content: flex-start;
 }
-.right-items {
+.right-items1 .right-items {
   text-decoration: none;
   display: flex;
   justify-content: flex-end;
   float: right;
+  padding: 50px 0;
 }
 nav {
   background-color: #a295c8;
+  width: 100%;
   display: flex;
   align-items: center;
-  flex-wrap: nowrap;
+  box-sizing: border-box;
 }
 nav ul {
   width: 100%;
@@ -52,7 +54,6 @@ nav a:hover {
 .logo {
   align-items: center;
   width: 180px;
-  padding: 0 60px;
 }
 i {
   padding-right: 8px;
@@ -75,4 +76,16 @@ i {
 }
 .sidebar li {
   width: 100%;
+}
+
+@media (max-width: 850px) {
+  .left-items1 {
+    display: none;
+  }
+  .right-items1 {
+    display: none;
+  }
+  .right-items {
+    padding-left: 80px;
+  }
 }
