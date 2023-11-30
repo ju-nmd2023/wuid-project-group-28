@@ -1,71 +1,113 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "OpenSans", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
-  margin: 0px;
-  padding: 0;
-  background-color: #f1e3f03a;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f1e3f084;
 }
 
-/* HEADER */
-
-header {
+.left-items1 {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+}
+.right-items1 .right-items {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+  padding: 50px 0;
+}
+nav {
   background-color: #a295c8;
-  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
   box-sizing: border-box;
 }
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+nav ul {
   width: 100%;
-}
-
-ul {
-  display: flex;
   list-style: none;
-  padding: 0;
-  margin: 0;
-  flex: 1;
+  display: flex;
   justify-content: space-between;
 }
-
-li {
-  margin-inline: 5rem;
+nav li {
+  height: 50px;
 }
-
-.left-items {
+nav a {
+  height: 100%;
+  padding: 0 30px; /*create space between text*/
+  text-decoration: none;
   display: flex;
-  list-style: none;
-  flex: 1;
+  align-items: center;
+  color: #393b65;
 }
-
-.right-items {
-  display: flex;
-  list-style: none;
-  flex: 1;
+nav a:hover {
+  background-color: #f1e3f0;
 }
 
 .logo {
-  width: 180px;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  width: 180px;
+}
+i {
+  padding-right: 8px;
 }
 
-a {
-  color: #393b65;
-  text-decoration: none;
+/* Menu Bar*/
+
+.sidebar {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  height: 100vh; /*mean full height of the screen*/
+  width: 250px;
+  z-index: 999;
+  background-color: #f1e3f027;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
 }
 
-/* Side Menu Bar */
+/* Making Header Responsiv*/
 
-/* Footer*/
+@media (max-width: 850px) {
+  .left-items1 {
+    display: none;
+  }
+  .right-items1 {
+    display: none;
+  }
+  .right-items {
+    padding-left: 80px;
+  }
+}
+
+@media (min-width: 393px) {
+  .right-items {
+    padding: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+/* Footer */
+
 footer {
   background-color: #a295c8;
   padding: 40px 0;
@@ -157,6 +199,7 @@ footer {
 }
 
 .footer-info {
+  display: flex;
   color: #fff;
 }
 
@@ -191,4 +234,42 @@ button {
 
 button:hover {
   background-color: #393b65; /* used to define the styles for a button when it is being hovered over by the user; that is it changes the background color */
+}
+
+/* Responsive Footer */
+
+@media screen and (max-width: 1024px) {
+  .footer-search input[type="text"] {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-search button {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 393px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .footer-search {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .footer-search input[type="text"] {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-search button {
+    margin-left: 5px;
+  }
 }
