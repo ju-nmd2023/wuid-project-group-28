@@ -4,30 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product page</title>
+    <title>Responive bar</title>
     <link rel="stylesheet" href="productpage.css">
     <script src="https://kit.fontawesome.com/22acc898cc.js" crossorigin="anonymous"></script>
     <script src="productpage.js" defer></script>
 </head>
-<header>
+
+<body>
     <nav>
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="22"
+                        viewBox="0 -960 960 960" width="22">
+                        <path
+                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                    </svg></a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#Explore">Explore</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a></li>
+            <li><a href="#">Costumer Service</a></li>
+            <li><a href="#">Login/Sign in</a></li>
+        </ul>
         <ul>
-            <div class="left-items">
-                <li><a href="#About">About</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </div>
+            <li onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i>Menu</a></li>
+            <li class="left-items"><a href="#">About</a></li>
+            <li class="left-items"><a href="#">Contact</a></li>
         </ul>
         <img src="logo/VelvetSkin logo_Rityta 1 copy.png" class="logo">
         <ul>
-            <div class="right-items">
-                <li class="SAC"><a href="#Search"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
-                <li class="SAC"><a href="#Account"><i class="fa-regular fa-user"></i>Account</a></li>
-                <li class="SAC"><a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
-            </div>
+            <li class="right-items"><a href="#Search"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
+            <li class="right-items"><a href="#Account"><i class="fa-regular fa-user"></i>Account</a></li>
+            <li class="right-items"><a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
         </ul>
-</header>
-
-<body>
+    </nav>
 
 </body>
 

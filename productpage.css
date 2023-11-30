@@ -1,83 +1,78 @@
 * {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
   background-color: #f1e3f0, 20%;
 }
 
-/* HEADER*/
-
-header {
-  background-color: #a295c8;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-.logo {
-  width: 180px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex: 1;
-  justify-content: space-between;
-}
-
 .left-items {
-  color: #393b65;
   text-decoration: none;
   display: flex;
-  list-style: none;
-  flex: 1;
+  justify-content: flex-start;
 }
 .right-items {
-  color: #393b65;
   text-decoration: none;
   display: flex;
+  justify-content: flex-end;
+  float: right;
+}
+nav {
+  background-color: #a295c8;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+nav ul {
+  width: 100%;
   list-style: none;
-  flex: 1;
+  display: flex;
+  justify-content: space-between;
 }
-li {
-  margin-inline: 5rem;
-  color: #393b65;
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px; /*create space between text*/
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #393b65;
+}
+nav a:hover {
+  background-color: #f1e3f0;
 }
 
-nav ul li a {
-  color: #393b65;
-  text-decoration: none;
+.logo {
+  align-items: center;
+  width: 180px;
+  padding: 0 60px;
 }
-
 i {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #393b65;
-  text-decoration: none;
-  display: flex;
-  list-style: none;
-  flex: 1;
-  padding: 0%;
-  margin: 0;
+  padding-right: 8px;
 }
 
-@media only screen and (max-width: 1000px) {
+.sidebar {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  height: 100vh; /*mean full height of the screen*/
+  width: 250px;
+  z-index: 999;
+  background-color: #f1e3f048;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
 }
