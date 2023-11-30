@@ -1,11 +1,11 @@
 * {
   margin: 0%;
   padding: 0%;
-  font-family: "Open Sans", sans-serif;
   box-sizing: border-box;
 }
 
 body {
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f1e3f0, 20%;
@@ -15,6 +15,7 @@ body {
 
 header {
   background-color: #a295c8;
+  width: 100%;
   padding: 20px;
   box-sizing: border-box;
 }
@@ -54,4 +55,29 @@ nav ul {
   display: flex;
   list-style: none;
   flex: 1;
+}
+li {
+  margin-inline: 5rem;
+  color: #393b65;
+  text-decoration: none;
+}
+
+nav ul li a {
+  color: #393b65;
+  text-decoration: none;
+}
+
+i {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #393b65;
+  text-decoration: none;
+  display: flex;
+  list-style: none;
+  flex: 1;
+  padding: 0%;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1000px) {
 }
