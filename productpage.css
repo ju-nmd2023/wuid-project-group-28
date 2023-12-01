@@ -80,7 +80,7 @@ i {
   width: 100%;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .left-items1 {
     display: none;
   }
@@ -225,7 +225,69 @@ button:hover {
   background-color: #393b65; /* used to define the styles for a button when it is being hovered over by the user; that is it changes the background color */
 }
 
-@media (min-width: 400px) {
+/* Responsive Footer */
+
+@media screen and (max-width: 1200px) {
+  .footer-search input[type="text"] {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-search button {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    text-align: center;
+  }
+
   .footer-search {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .footer-search input[type="text"] {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-search button {
+    margin-left: 5px;
+  }
+}
+
+/*Main products*/
+
+.delivery {
+  align-items: baseline;
+  text-align: end;
+  margin: 10px 0;
+  background-color: #f1e3f0;
+  background-image: url(products/delivery.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  color: #393b65;
+  display: flex;
+  flex-shrink: 0;
+  font-size: 30px;
+  line-height: 120px;
+  overflow: hidden;
+  padding: 10px 20px;
+  position: relative;
+  white-space: nowrap;
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .delivery {
+    font-size: 20px;
   }
 }
