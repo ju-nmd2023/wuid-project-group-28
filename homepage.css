@@ -212,7 +212,7 @@ i {
   background-color: #393b65;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .main-slider .slide {
     min-height: 400px;
   }
