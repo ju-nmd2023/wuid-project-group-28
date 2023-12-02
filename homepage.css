@@ -110,13 +110,14 @@ i {
 .main-slider {
   display: flex;
   overflow: hidden;
+  position: relative;
 }
 
 .slide {
   min-width: 1500px;
   height: 900px;
   box-sizing: border-box;
-  position: relative;
+  animation: fadein 1.5s;
 }
 
 .slide img {
@@ -125,25 +126,25 @@ i {
   object-fit: cover;
 }
 
-.img-slider .slide .info-detail {
+.info-detail {
   position: absolute;
-  top: 10px;
-  padding: 15px 30px;
+  top: 35%;
+  padding: 15px 100px;
 }
 
-.img-slider .slide .info-detail h2 {
+.info-detail h2 {
   color: #393b65;
   font-family: "Goudy Old Style", Source Sans Pro;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 800;
   letter-spacing: 2px;
 }
 
-.img-slider .slide .info-detail p {
+.info-detail p {
   color: #393b65;
   font-family: "Goudy Old Style", Source Sans Pro;
-  font-size: 16px;
-  width: 60%;
+  font-size: 20px;
+  width: 25%;
   padding: 10px;
   background: #f1e3f0a6;
   border-radius: 4px;
@@ -175,6 +176,38 @@ i {
   margin-left: 5px;
 }
 
+/* Slide Buttons */
+
+.navigation {
+  position: absolute;
+  display: flex;
+  top: 64rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation .slide-btn {
+  border: 1px solid #393b65;
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.slide-btn:hover {
+  background-color: #393b65;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /* Title and Subhead*/
 
 .velvetskin-title {

@@ -27,7 +27,7 @@ function nextSlide() {
 }
 
 function startSlider() {
-  setInterval(nextSlide, 10000); // 3000 milliseconds = 3 seconds
+  setInterval(nextSlide, 10000);
 }
 
 showSlide(currentSlide);
