@@ -126,7 +126,7 @@ i {
   min-width: 1500px;
   height: 900px;
   box-sizing: border-box;
-  animation: fadein 1s;
+  animation: fadein 1.5s;
 }
 
 .main-slider .slide img {
