@@ -447,7 +447,7 @@ button:hover {
 
 /* Responsive Footer */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .footer-search input[type="text"] {
     width: 100%;
     margin-left: 0;
@@ -458,7 +458,7 @@ button:hover {
   }
 }
 
-@media screen and (max-width: 393px) {
+@media screen and (max-width: 1200px) {
   .footer-container {
     flex-direction: column;
   }
