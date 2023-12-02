@@ -265,6 +265,12 @@ button:hover {
 
 /*Main products*/
 
+h1 {
+  color: #393b65;
+  text-align: center;
+  padding-bottom: 60px;
+  font-size: 45px;
+}
 .delivery {
   align-items: baseline;
   text-align: end;
@@ -353,4 +359,14 @@ button:hover {
 
 .filters .contentBox.active .label::before {
   content: "-";
+}
+
+@media screen and (max-width: 1200px) {
+  .filters {
+    font-size: 15px;
+    max-width: 200px;
+  }
+  h1 {
+    font-size: 30px;
+  }
 }
