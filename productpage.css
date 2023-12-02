@@ -268,7 +268,8 @@ button:hover {
 .delivery {
   align-items: baseline;
   text-align: end;
-  margin: 10px 0;
+  margin-top: 10px;
+  margin-bottom: 40px;
   background-color: #f1e3f0;
   background-image: url(products/delivery.jpg);
   background-position: center;
@@ -284,10 +285,72 @@ button:hover {
   position: relative;
   white-space: nowrap;
   width: 100%;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1200px) {
   .delivery {
     font-size: 20px;
   }
+}
+
+/*Filters*/
+
+/*.row {
+  display: flex;
+  justify-content: left;
+  flex-wrap: nowrap;
+}*/
+/*.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 20px;
+}*/
+
+.filters {
+  max-width: 300px;
+  flex-basis: 25%;
+  font-size: 20px;
+  color: #393b65;
+  cursor: pointer; /*appearance of the hand when hovering on the element(to show that the element is active)*/
+}
+
+.filters .contentBox {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 40px;
+}
+
+.filters .contentBox .label {
+  position: relative;
+  padding: 8px;
+  background-color: #a295c8;
+}
+
+.filters .contentBox .label::before {
+  content: "+";
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(
+    -50%
+  ); /*This moves the image up by 50% of it’s height so that the center of the image aligns with the vertically centered position.*/
+  font-size: 1.5rem; /* rem * 16 = px */
+}
+.filters .contentBox .content {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: 0.5s;
+  overflow-y: auto;
+}
+
+.filters .contentBox.active .content {
+  height: 50px;
+  padding-top: 8px;
+}
+
+.filters .contentBox.active .label::before {
+  content: "-";
 }
