@@ -57,6 +57,7 @@ nav a:hover {
   align-items: center;
   width: 180px;
 }
+
 i {
   padding-right: 8px;
 }
@@ -100,6 +101,157 @@ i {
   .sidebar {
     width: 100%;
   }
+}
+
+/* Main Content */
+
+/* Main Slider */
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.main-slider {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+.main-slider .slide {
+  min-width: 1500px;
+  height: 900px;
+  box-sizing: border-box;
+  animation: fadein 1.5s;
+}
+
+.main-slider .slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.info-detail {
+  position: absolute;
+  top: 35%;
+  padding: 15px 100px;
+}
+
+.info-detail h2 {
+  color: #393b65;
+  font-family: "Goudy Old Style", Source Sans Pro;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.info-detail p {
+  color: #393b65;
+  font-family: "Goudy Old Style", Source Sans Pro;
+  font-size: 20px;
+  width: 25%;
+  padding: 10px;
+  background: #f1e3f0a6;
+  border-radius: 4px;
+}
+
+/* Buttons */
+
+#buynow {
+  background-color: #393b65;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 5px;
+}
+
+#details {
+  background-color: #393b65;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 5px;
+}
+
+/* Slide Buttons */
+
+.navigation {
+  position: absolute;
+  display: flex;
+  top: 64rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation .slide-btn {
+  border: 1px solid #393b65;
+  width: 12px;
+  height: 12px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.slide-btn:hover {
+  background-color: #393b65;
+}
+
+/* Title and Subhead*/
+
+.velvetskin-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #393b65;
+  font-family: "Goudy Old Style", Source Sans Pro;
+  margin-top: 70px;
+  font-size: 1.5rem;
+}
+
+.undertext p {
+  color: #393b65;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 100px;
+}
+
+.trio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.trio-group {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-bottom: 0.8px solid #393b65;
+}
+
+.bestsellers-group p {
+  display: inline;
+  margin: 10px;
+  cursor: pointer;
+  color: #393b65;
+}
+
+.bestsellers-group p:hover {
+  color: #a295c8;
 }
 
 /* Footer */
