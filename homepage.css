@@ -123,15 +123,16 @@ i {
 }
 
 .main-slider .slide {
-  min-width: 1500px;
+  width: 100%;
   height: 900px;
+  min-height: 500px;
   box-sizing: border-box;
   animation: fadein 1.5s;
 }
 
 .main-slider .slide img {
   width: 100%;
-  height: auto;
+  height: 900px;
   object-fit: cover;
 }
 
@@ -171,6 +172,7 @@ i {
   cursor: pointer;
   padding: 10px 20px;
   margin-left: 5px;
+  margin-top: 10px;
 }
 
 #details {
@@ -183,6 +185,7 @@ i {
   cursor: pointer;
   padding: 10px 20px;
   margin-left: 5px;
+  margin-top: 10px;
 }
 
 /* Slide Buttons */
@@ -207,6 +210,64 @@ i {
 
 .slide-btn:hover {
   background-color: #393b65;
+}
+
+@media (max-width: 1200px) {
+  .main-slider .slide {
+    min-height: 400px;
+  }
+
+  .info-detail h2 {
+    font-size: 35px;
+  }
+
+  .info-detail p {
+    font-size: 15px;
+  }
+
+  #buynow,
+  #details {
+    padding: 8px 18px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .main-slider .slide {
+    min-height: 300px;
+  }
+
+  .info-detail h2 {
+    font-size: 30px;
+  }
+
+  .info-detail p {
+    font-size: 15px;
+  }
+  #buynow,
+  #details {
+    padding: 5px 15px;
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .main-slider .slide {
+    min-height: 200px;
+  }
+
+  .info-detail h2 {
+    font-size: 25px;
+  }
+
+  .info-detail p {
+    font-size: 12px;
+  }
+  #buynow,
+  #details {
+    padding: 4px 12px;
+    font-size: 0.55rem;
+  }
 }
 
 /* Title and Subhead*/
