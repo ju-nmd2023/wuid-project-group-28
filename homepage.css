@@ -57,6 +57,7 @@ nav a:hover {
   align-items: center;
   width: 180px;
 }
+
 i {
   padding-right: 8px;
 }
@@ -100,6 +101,123 @@ i {
   .sidebar {
     width: 100%;
   }
+}
+
+/* Main Content */
+
+/* Main Slider */
+
+.main-slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.slide {
+  min-width: 1500px;
+  height: 900px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-slider .slide .info-detail {
+  position: absolute;
+  top: 10px;
+  padding: 15px 30px;
+}
+
+.img-slider .slide .info-detail h2 {
+  color: #393b65;
+  font-family: "Goudy Old Style", Source Sans Pro;
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.img-slider .slide .info-detail p {
+  color: #393b65;
+  font-family: "Goudy Old Style", Source Sans Pro;
+  font-size: 16px;
+  width: 60%;
+  padding: 10px;
+  background: #f1e3f0a6;
+  border-radius: 4px;
+}
+
+/* Buttons */
+
+#buynow {
+  background-color: #393b65;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 5px;
+}
+
+#details {
+  background-color: #393b65;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 0.8rem;
+  font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-left: 5px;
+}
+
+/* Title and Subhead*/
+
+.velvetskin-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #393b65;
+  font-family: "Goudy Old Style", Source Sans Pro;
+  margin-top: 70px;
+  font-size: 1.5rem;
+}
+
+.undertext p {
+  color: #393b65;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 100px;
+}
+
+.trio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.trio-group {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-bottom: 0.8px solid #393b65;
+}
+
+.bestsellers-group p {
+  display: inline;
+  margin: 10px;
+  cursor: pointer;
+  color: #393b65;
+}
+
+.bestsellers-group p:hover {
+  color: #a295c8;
 }
 
 /* Footer */
