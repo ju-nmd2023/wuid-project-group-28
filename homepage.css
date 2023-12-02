@@ -107,20 +107,29 @@ i {
 
 /* Main Slider */
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .main-slider {
   display: flex;
   overflow: hidden;
   position: relative;
 }
 
-.slide {
+.main-slider .slide {
   min-width: 1500px;
   height: 900px;
   box-sizing: border-box;
-  animation: fadein 1.5s;
+  animation: fadein 1s;
 }
 
-.slide img {
+.main-slider .slide img {
   width: 100%;
   height: auto;
   object-fit: cover;
@@ -200,14 +209,6 @@ i {
   background-color: #393b65;
 }
 
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 /* Title and Subhead*/
 
 .velvetskin-title {
