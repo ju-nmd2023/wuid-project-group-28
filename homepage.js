@@ -9,7 +9,7 @@ function hideSidebar() {
 }
 
 /* main slider */
-const slides = document.querySelectorAll(".slide");
+const slides = document.querySelectorAll(".main-slider .slide");
 let currentSlide = 0;
 
 function showSlide(n) {
@@ -27,7 +27,7 @@ function nextSlide() {
 }
 
 function startSlider() {
-  setInterval(nextSlide, 10000);
+  setInterval(nextSlide, 9000);
 }
 
 showSlide(currentSlide);

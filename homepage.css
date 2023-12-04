@@ -213,10 +213,6 @@ i {
 }
 
 @media (max-width: 1000px) {
-  .main-slider .slide {
-    min-height: 400px;
-  }
-
   .info-detail h2 {
     font-size: 35px;
   }
@@ -233,10 +229,6 @@ i {
 }
 
 @media (max-width: 850px) {
-  .main-slider .slide {
-    min-height: 300px;
-  }
-
   .info-detail h2 {
     font-size: 30px;
   }
@@ -252,10 +244,6 @@ i {
 }
 
 @media (max-width: 650px) {
-  .main-slider .slide {
-    min-height: 200px;
-  }
-
   .info-detail h2 {
     font-size: 25px;
   }
