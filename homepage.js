@@ -41,7 +41,7 @@ let nextBtn = document.getElementById("nextBtn");
 scrollContainer.addEventListener("wheel", (evt) => {
   evt.preventDefault();
   scrollContainer.scrollLeft += evt.deltaY;
-  scrollContainer.style.scrollBehavior = "auto";
+  scrollContainer.style.scrollBehavior = "smooth";
 });
 
 nextBtn.addEventListener("click", () => {
