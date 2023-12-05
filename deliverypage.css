@@ -108,6 +108,8 @@ i {
 /* Left Side */
 
 .rectangle {
+  display: flex;
+  align-items: center;
   width: 420px;
   margin-left: 20px;
   margin-top: 50px;
@@ -119,6 +121,16 @@ i {
   border: 2px solid #a295c8;
   border-radius: 5px;
   font-size: 20px;
+  padding: 5px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  background-color: #393b65;
+  border: 2px solid #393b65;
+  border-radius: 50%;
 }
 
 .contact-details p {
@@ -164,6 +176,7 @@ input[type="address-or-postcode"] {
   border-radius: 3px;
   padding: 10px 10px;
   width: 400px;
+  font-size: 13px;
 }
 
 input[type="email"]::placeholder,
@@ -174,6 +187,7 @@ input[type="country"]::placeholder,
 input[type="address-or-postcode"]::placeholder {
   color: #393b65;
   font-style: italic;
+  font-size: 13px;
 }
 
 .deliveryadd {
