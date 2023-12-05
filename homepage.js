@@ -46,16 +46,30 @@ scrollContainer.addEventListener("wheel", (evt) => {
 
 nextBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft += 900;
+  scrollContainer.scrollLeft += 950;
 });
 
 backBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehavior = "smooth";
-  scrollContainer.scrollLeft -= 900;
+  scrollContainer.scrollLeft -= 950;
 });
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth <= 900) {
+  if (window.innerWidth <= 1200) {
+    nextBtn.addEventListener("click", () => {
+      scrollContainer.style.scrollBehavior = "smooth";
+      scrollContainer.scrollLeft += 600;
+    });
+
+    backBtn.addEventListener("click", () => {
+      scrollContainer.style.scrollBehavior = "smooth";
+      scrollContainer.scrollLeft -= 600;
+    });
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth <= 800) {
     nextBtn.addEventListener("click", () => {
       scrollContainer.style.scrollBehavior = "smooth";
       scrollContainer.scrollLeft += 400;

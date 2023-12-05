@@ -162,19 +162,7 @@ i {
 
 /* Buttons */
 
-#buynow {
-  background-color: #393b65;
-  border: none;
-  border-radius: 6px;
-  color: #fff;
-  font-size: 0.8rem;
-  font-family: "Open Sans", sans-serif;
-  cursor: pointer;
-  padding: 10px 20px;
-  margin-left: 5px;
-  margin-top: 10px;
-}
-
+#buynow,
 #details {
   background-color: #393b65;
   border: none;
