@@ -2,43 +2,244 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responive bar</title>
-    <link rel="stylesheet" href="productpage.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VelvetSkin</title>
+    <link rel="stylesheet" href="productpage.css" />
     <script src="https://kit.fontawesome.com/22acc898cc.js" crossorigin="anonymous"></script>
     <script src="productpage.js" defer></script>
 </head>
 
 <body>
-    /*HEADER*/
     <nav>
         <ul class="sidebar">
-            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="22"
-                        viewBox="0 -960 960 960" width="22">
+            <li onclick="hideSidebar()">
+                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22">
                         <path
                             d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                    </svg></a></li>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
+                    </svg>
+                </a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productpage.html">Shop</a></li>
             <li><a href="#Explore">Explore</a></li>
             <li><a href="#About">About</a></li>
-            <li><a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a></li>
+            <li>
+                <a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a>
+            </li>
             <li><a href="#">Costumer Service</a></li>
             <li><a href="#">Login/Sign in</a></li>
         </ul>
         <ul>
-            <li onclick=showSidebar()><a href="#"><i class="fa-solid fa-bars"></i>Menu</a></li>
+            <li onclick="showSidebar()">
+                <a href="#"><i class="fa-solid fa-bars"></i>Menu</a>
+            </li>
             <li class="left-items1"><a href="#">About</a></li>
             <li class="left-items1"><a href="#">Contact</a></li>
         </ul>
-        <img src="logo/VelvetSkin logo_Rityta 1 copy.png" class="logo">
+        <img src="logo/VelvetSkin logo_Rityta 1 copy.png" class="logo" />
         <ul>
-            <li class="right-items1"><a href="#Search"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
-            <li class="right-items1"><a href="#Account"><i class="fa-regular fa-user"></i>Account</a></li>
-            <li class="right-items"><a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a></li>
+            <li class="right-items1">
+                <a href="#Search"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+            </li>
+            <li class="right-items1">
+                <a href="#Account"><i class="fa-regular fa-user"></i>Account</a>
+            </li>
+            <li class="right-items">
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+            </li>
         </ul>
     </nav>
+    <main>
+        <div class="delivery" id="Free">
+            <span class="delivery1">Free DELIVERY for orders over 250 kr</span>
+        </div>
+        <h1>All products</h1>
+        <div id="PP">
+            <div class="container">
+                <div class="row">
+                    <div class="filters">
+                        <div class="contentBox">
+                            <div class="label">Skin Concern</div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Acne & Blemish</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Dark Circles</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Dehidrated Skin</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Pigmentation</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Redness</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Scaly Skin</p>
+                            </div>
+                        </div>
+                        <div class="contentBox">
+                            <div class="label">Product Type</div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Serums & Oils</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Moisturaisers</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Toners</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Cleansers</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Sets</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Sun Protection</p>
+                            </div>
+                        </div>
+                        <div class="contentBox">
+                            <div class="label">Brand</div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Revolution</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>The Ordinary</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Neauthy</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Onne</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Hella Co.</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Bioglow</p>
+                            </div>
+                        </div>
+                        <div class="contentBox">
+                            <div class="label">Skin Type</div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Normal</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Oil</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Dry</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Sensitive</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Combi</p>
+                            </div>
+                        </div>
+                        <div class="contentBox">
+                            <div class="label">Key Ingredient</div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Antioxidants</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Peptides</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Direct Acid</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Retinoids</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Vitamin C</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>AHA</p>
+                            </div>
+                        </div>
+                        <div class="contentBox">
+                            <div class="label">Preferences</div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Alcohol-Free</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Cruelty-Free</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Gluten-Free</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Oil-Free</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Silicon-Free</p>
+                            </div>
+                            <div class="content">
+                                <p><i class="fa-regular fa-square"></i>Vegan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+            </div>
+            </main>
+            <footer>
+                <footer>
+                    <div class="footer-container">
+                        <div class="footer-info">
+                            <div class="footer-top">
+                                <div class="footer-logo">
+                                    <img src="logo/VelvetSkin logo_Rityta 1 copy.png" alt="Your Logo" />
+                                </div>
+                                <div class="footer-search">
+                                    <input type="text" id="search" placeholder="Enter email address" />
+                                    <button id="subscribe">Subscribe</button>
+                                </div>
+                                <div class="footer-social">
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-text-container">
+                        <div class="footer-column">
+                            <h4>Shop</h4>
+                            <p>All products</p>
+                        </div>
+                        <div class="footer-column">
+                            <h4>About</h4>
+                            <p>About us</p>
+                            <p>FAQ</p>
+                        </div>
+                        <div class="footer-column">
+                            <h4>Contact</h4>
+                            <p>Phone number</p>
+                            <p>Email address</p>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2023 VelvetSkin. All rights reserved.</p>
+                        <div class="additional-text">
+                            <p>Privacy policy</p>
+                            <p>Terms of service</p>
+                            <p>Shipping</p>
+                        </div>
+                    </div>
+                </footer>
+            </footer>
 </body>
 
 </html>
