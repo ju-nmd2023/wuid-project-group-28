@@ -100,29 +100,28 @@
             placeholder="Enter address or postcode"
           />
         </div>
-
-        <div class="delivery-option"><p>Select a delivery option</p></div>
-        <input type="radio" name="RoyalMail" id="royale" />
-        <label for="royale">
-          <div class="royalmail">
-            <span class="title-Royale"> Royal Mail Standard </span>
-            <span class="subtext">
-              Fully Tracked Service, Delivery 2-3 days from despatch
-            </span>
-            <span class="price">50 SEK</span>
-          </div>
-        </label>
-
-        <input type="radio" name="delivery" id="Post" />
-        <label for="Post">
-          <div class="postnord">
-            <span class="title-Post"> PostNord </span>
-            <span class="sub-text">
-              Fully Tracked Service, Delivery 10-12 days from despatch
-            </span>
-            <span class="free">Free</span>
-          </div>
-        </label>
+        <form>
+          <label>
+            <input type="radio" name="delivery" value="RoyaleMail" />
+            <div>
+              <span class="title1">Royal Mail Standard</span>
+              <span class="undertext1">
+                Fully Tracked Service, Delivery 2-3 days from despatch
+              </span>
+              <span class="price">50 SEK</span>
+            </div>
+          </label>
+          <label>
+            <input type="radio" name="delivery" value="PostNord" />
+            <div>
+              <span class="title2">PostNord</span>
+              <span class="undertext2">
+                Fully Tracked Service, Delivery 10-12 days from despatch
+              </span>
+              <span class="price2">Free</span>
+            </div>
+          </label>
+        </form>
         <button id="proceed-payment-btn">Proceed Payment</button>
       </div>
     </main>
