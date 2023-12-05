@@ -1,57 +1,194 @@
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
   font-family: "OpenSans", sans-serif;
-  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+  margin: 0px;
   padding: 0;
-  background-color: #f1e3f0, 20%;
+  background-color: #f1e3f03a;
 }
 
 /* HEADER */
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
   background-color: #a295c8;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.header-container {
+.navbar {
   display: flex;
-  justify-content: space-between; /* adds space between the nav items and the logo */
-  align-items: center; /* it will vertically align the items within the header-container */
-  width: 100%; /* 100% of the header. It ensures that the header-container will take up the entire width of header */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 ul {
   display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
+  flex: 1;
+  justify-content: space-between;
 }
 
 li {
-  margin: 2rem;
+  margin-inline: 5rem;
 }
 
-/* Nav items: These classes are used to style the nav items.*/
+.left-items {
+  display: flex;
+  list-style: none;
+  flex: 1;
+}
 
-.left-items,
 .right-items {
-  display: flex; /* flexbox for nav items */
-  align-items: center; /* vertically align items in the center */
+  display: flex;
+  list-style: none;
+  flex: 1;
 }
 
 .logo {
-  width: 150px;
-  margin: 0 20px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 a {
   color: #393b65;
   text-decoration: none;
+}
+
+/* Side Menu Bar */
+
+/* Footer*/
+footer {
+  background-color: #a295c8;
+  padding: 40px 0;
+  color: #393b65;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 200px;
+  height: auto;
+}
+
+.footer-text-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #f1e3f0;
+}
+
+.footer-column {
+  flex: 1;
+  margin-left: 40px;
+}
+
+h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-text-container p {
+  margin-top: 10px;
+  color: #393b65;
+}
+
+.footer-social {
+  display: flex;
+  margin-top: 100px;
+  margin-left: -150px;
+}
+
+.footer-social a {
+  color: #393b65;
+  margin-right: 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #393b65;
+}
+
+.footer-bottom {
+  display: flex;
+  text-align: right;
+  padding-top: 20px;
+  padding-right: 20px;
+  border-top: 1px solid #f1e3f0;
+  font-size: 12px;
+}
+
+.additional-text {
+  display: flex;
+  color: #393b65;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.additional-text p {
+  margin-right: 20px;
+}
+
+footer {
+  background-color: #a295c8;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info {
+  color: #fff;
+}
+
+.footer-search {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"]::placeholder {
+  color: #393b65;
+}
+
+input[type="text"] {
+  background-color: #a295c8;
+  border: 1px solid;
+  border-radius: 3px;
+  color: #393b65;
+  padding: 5px 10px;
+  margin-left: 450px;
+  width: 300px;
+}
+
+button {
+  background-color: #393b65;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color: #393b65; /* used to define the styles for a button when it is being hovered over by the user; that is it changes the background color */
 }

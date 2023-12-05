@@ -1,44 +1,96 @@
 * {
-  margin: 0%;
-  padding: 0%;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
   font-family: "Open Sans", sans-serif;
-  box-sizing: border-box;
+  background-color: #f1e3f084;
 }
-header {
-  position: absolute;
-  background-color: #a294c7;
-  width: 100%;
-}
-/*.container{
-    padding: 10px 10%;
-  }*/
 
+.left-items1 {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+}
+.right-items1 .right-items {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+  padding: 50px 0;
+}
 nav {
+  background-color: #a295c8;
+  width: 100%;
   display: flex;
   align-items: center;
-  padding: 10px 0;
-  justify-content: space-between;
-}
-.logo {
-  width: 180px;
-  align-items: center;
-  cursor: pointer;
+  box-sizing: border-box;
 }
 nav ul {
-  list-style: none;
   width: 100%;
-  text-align: justify;
-  padding: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
-nav ul li {
-  display: inline-block;
-  margin: 10px 20px;
+nav li {
+  height: 50px;
 }
-nav ul li a {
-  color: #393b65;
+nav a {
+  height: 100%;
+  padding: 0 30px; /*create space between text*/
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #393b65;
 }
-li.SAC {
-  text-align: center;
-  padding-left: 100px;
+nav a:hover {
+  background-color: #f1e3f0;
+}
+
+.logo {
+  align-items: center;
+  width: 180px;
+}
+i {
+  padding-right: 8px;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  height: 100vh; /*mean full height of the screen*/
+  width: 250px;
+  z-index: 999;
+  background-color: #f1e3f048;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+
+@media (max-width: 850px) {
+  .left-items1 {
+    display: none;
+  }
+  .right-items1 {
+    display: none;
+  }
+  .right-items {
+    padding-left: 80px;
+  }
+}
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
 }
