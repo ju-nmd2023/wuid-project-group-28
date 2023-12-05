@@ -268,7 +268,7 @@ button:hover {
 h2 {
   color: #393b65;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   padding-right: 0;
   font-size: 45px;
 }
@@ -305,20 +305,21 @@ h2 {
 
 .row {
   display: flex;
-  justify-content: space-around;
+  justify-content: left;
   flex-wrap: nowrap;
 }
 
 .container {
   padding: 20px;
-  display: grid;
+  display: flex;
+  justify-content: center;
   row-gap: 20px;
   padding-left: 60px;
-  justify-content: center;
 }
 
 .filters {
-  max-width: 300px;
+  justify-content: left;
+  width: 15rem;
   flex-basis: 35%;
   font-size: 20px;
   color: #393b65;
@@ -376,42 +377,35 @@ h2 {
 }
 /*Sort by*/
 
-.section .top {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 4rem;
-}
-.all-products .top select {
-  width: 20rem;
-  padding: 1rem;
+select {
+  width: 15rem;
+  padding: 10px;
   border: 1px solid #ccc;
   appearance: none;
   outline: none;
+  border-radius: 4px;
+  font-size: 20px;
+  color: #393b65;
+  background-color: #a295c8;
 }
-.all-products form {
-  position: relative;
-  z-index: 1;
-}
-.all-products form span {
+form {
   position: absolute;
-  top: 50%;
-  right: 1rem;
-  transform: translateY(-50%);
-  font-size: 2rem;
-  z-index: 0;
+  right: 0;
+  z-index: 1;
+  color: #393b65;
 }
-.top container {
-  display: flex;
-  justify-content: space-between;
+form span {
+  color: #393b65;
+  font-size: 20px;
 }
 
 /*Products*/
 .card {
-  width: 225px;
+  width: 230px;
   min-height: 350px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
   display: flex;
+  justify-content: left;
   flex-direction: column; /* elements in column */
   border-radius: 4px;
   transition: 0.2s;
@@ -522,17 +516,46 @@ h1 {
   max-width: 1000px; /* container's size */
   justify-content: center;
   justify-items: center; /* card's position */
-  column-gap: 30px;
+  column-gap: 100px;
   row-gap: 50px;
-  margin: 0;
+  padding-top: 50px;
 }
-
-@media screen and (max-width: 1200px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.show {
+  text-align: center;
+  padding-bottom: 50px;
 }
-
 .showmore {
   position: relative;
+  width: 22rem;
+  font-size: 25px;
+  border-radius: 4px;
+}
+@media screen and (max-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: left;
+    column-gap: 50px;
+  }
+  .showmore {
+    width: 18rem;
+    font-size: 18px;
+    padding: 5px 8px;
+    align-items: center;
+  }
+  .filters {
+    font-size: 15px;
+  }
+  select {
+    width: 12rem;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+  }
+  select {
+    width: 10rem;
+  }
 }
