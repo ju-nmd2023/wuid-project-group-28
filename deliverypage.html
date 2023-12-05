@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>delivery page</title>
+    <title>VelvetSkin</title>
     <link rel="stylesheet" href="deliverypage.css" />
     <link
       rel="stylesheet"
@@ -62,7 +62,10 @@
     </nav>
 
     <main>
-      <div class="rectangle"><p>DELIVERY</p></div>
+      <div class="rectangle">
+        <div class="circle">1</div>
+        <p>DELIVERY</p>
+      </div>
       <div class="contact-details"><p>Contact Details</p></div>
       <div class="row">
         <div class="inputBox">
@@ -100,10 +103,28 @@
             placeholder="Enter address or postcode"
           />
         </div>
-
-        <div class="delivery-option"><p>Select a delivery option</p></div>
-        <button class="circle-btn"></button>
-        <button class="circle-btn"></button>
+        <form>
+          <label>
+            <input type="radio" name="delivery" value="RoyaleMail" />
+            <div>
+              <span class="title1">Royal Mail Standard</span>
+              <span class="undertext1">
+                Fully Tracked Service, Delivery 2-3 days from despatch
+              </span>
+              <span class="price">50 SEK</span>
+            </div>
+          </label>
+          <label>
+            <input type="radio" name="delivery" value="PostNord" />
+            <div>
+              <span class="title2">PostNord</span>
+              <span class="undertext2">
+                Fully Tracked Service, Delivery 10-12 days from despatch
+              </span>
+              <span class="price2">Free</span>
+            </div>
+          </label>
+        </form>
         <button id="proceed-payment-btn">Proceed Payment</button>
       </div>
     </main>
