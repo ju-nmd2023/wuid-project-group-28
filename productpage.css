@@ -307,30 +307,22 @@ h2 {
   display: flex;
   justify-content: left;
   flex-wrap: nowrap;
-}
-
-.container {
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  row-gap: 20px;
-  padding-left: 60px;
+  margin-left: 50px;
 }
 
 .filters {
   justify-content: left;
   width: 15rem;
-  flex-basis: 35%;
   font-size: 20px;
   color: #393b65;
   cursor: pointer; /*appearance of the hand when hovering on the element(to show that the element is active)*/
-  padding-right: 40px;
+  margin-right: 120px;
 }
 
 .filters .contentBox {
   position: relative;
   margin-top: 10px;
-  margin-left: 40px;
+  padding-right: 20px;
 }
 
 .filters .contentBox .label {
@@ -364,6 +356,11 @@ h2 {
 
 .filters .contentBox.active .label::before {
   content: "-";
+}
+@media screen and (max-width: 1340px) {
+  .filters {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -508,29 +505,29 @@ h1 {
 
 .cards {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    200px
-  ); /* auto-fill for grid-container */
-  width: 100%;
+  grid-template-columns: repeat(4, 1fr); /* auto-fill for grid-container */
+  width: 50%;
   max-width: 1000px; /* container's size */
   justify-content: center;
-  justify-items: center; /* card's position */
-  column-gap: 100px;
+  justify-items: right; /* card's position */
+  column-gap: 30px;
   row-gap: 50px;
   padding-top: 50px;
 }
 .show {
+  position: relative;
   text-align: center;
   padding-bottom: 50px;
+  justify-content: right;
 }
 .showmore {
   position: relative;
+  align-items: stretch;
   width: 22rem;
   font-size: 25px;
   border-radius: 4px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1340px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
     justify-content: left;
@@ -557,5 +554,10 @@ h1 {
   }
   select {
     width: 10rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
