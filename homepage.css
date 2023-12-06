@@ -81,43 +81,6 @@ i {
   padding-right: 8px;
 }
 
-/* CART TAB BAR */
-
-.cartTab {
-  width: 400px;
-  background-color: #f1e3f0;
-  color: #393b65;
-  position: fixed;
-  inset: 0 0 0 auto;
-  display: grid;
-  grid-template-rows: 70px 1fr 70px;
-}
-
-.cartTab h1 {
-  padding: 20px;
-  margin: 0;
-  font-weight: 500;
-}
-
-.cartTab .shopping-btn {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.cartTab .shopping-btn button {
-  background-color: #393b65;
-  color: #f1e3f0;
-  border: none;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.cartTab .shopping-btn .close {
-  background-color: #a295c8;
-  color: #393b65;
-}
-
 /* Menu Bar*/
 
 .sidebar {
@@ -164,10 +127,10 @@ i {
 /* Main Slider */
 
 @keyframes fadein {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
@@ -218,8 +181,8 @@ i {
 
 /* Buttons */
 
-#buynow,
-#details {
+.buynow,
+.details {
   background-color: #393b65;
   border: none;
   border-radius: 6px;
@@ -265,8 +228,8 @@ i {
     font-size: 15px;
   }
 
-  #buynow,
-  #details {
+  .buynow,
+  .details {
     padding: 8px 18px;
     font-size: 0.7rem;
   }
@@ -280,8 +243,8 @@ i {
   .info-detail p {
     font-size: 15px;
   }
-  #buynow,
-  #details {
+  .buynow,
+  .details {
     padding: 5px 15px;
     font-size: 0.7rem;
   }
@@ -295,8 +258,8 @@ i {
   .info-detail p {
     font-size: 12px;
   }
-  #buynow,
-  #details {
+  .buynow,
+  .details {
     padding: 4px 12px;
     font-size: 0.55rem;
   }
@@ -486,16 +449,7 @@ i {
 
 .slide-image:hover .overlay {
   visibility: visible;
-  animation: fade 0.5s;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fadein 0.5s;
 }
 
 /* Responsive styles */

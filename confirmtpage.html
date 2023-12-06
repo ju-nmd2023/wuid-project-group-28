@@ -1,117 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VelvetSkin</title>
     <link rel="stylesheet" href="confirmpage.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <script src="confirmpage.js" defer></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <ul class="sidebar">
-            <li onclick="hideSidebar()">
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22">
-                        <path
-                            d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                    </svg>
-                </a>
-            </li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="productpage.html">Shop</a></li>
-            <li><a href="#Explore">Explore</a></li>
-            <li><a href="#About">About</a></li>
-            <li>
-                <a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a>
-            </li>
-            <li><a href="#">Costumer Service</a></li>
-            <li><a href="#">Login/Sign in</a></li>
-        </ul>
-        <ul>
-            <li onclick="showSidebar()">
-                <a href="#"><i class="fa-solid fa-bars"></i>Menu</a>
-            </li>
-            <li class="left-items1"><a href="#">About</a></li>
-            <li class="left-items1"><a href="#">Contact</a></li>
-        </ul>
-        <img src="logo/VelvetSkin logo_Rityta 1 copy.png" class="logo" />
-        <ul>
-            <li class="right-items1">
-                <a href="#Search"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
-            </li>
-            <li class="right-items1">
-                <a href="#Account"><i class="fa-regular fa-user"></i>Account</a>
-            </li>
-            <li class="right-items">
-                <a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
-            </li>
-        </ul>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="22"
+              viewBox="0 -960 960 960"
+              width="22"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="productpage.html">Shop</a></li>
+        <li><a href="#Explore">Explore</a></li>
+        <li><a href="#About">About</a></li>
+        <li>
+          <a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a>
+        </li>
+        <li><a href="#">Costumer Service</a></li>
+        <li><a href="#">Login/Sign in</a></li>
+      </ul>
+      <ul>
+        <li onclick="showSidebar()">
+          <a href="#"><i class="fa-solid fa-bars"></i>Menu</a>
+        </li>
+        <li class="left-items1"><a href="#">About</a></li>
+        <li class="left-items1"><a href="#">Contact</a></li>
+      </ul>
+      <img src="logo/VelvetSkin logo_Rityta 1 copy.png" class="logo" />
+      <ul>
+        <li class="right-items1">
+          <a href="#Search"
+            ><i class="fa-solid fa-magnifying-glass"></i>Search</a
+          >
+        </li>
+        <li class="right-items1">
+          <a href="#Account"><i class="fa-regular fa-user"></i>Account</a>
+        </li>
+        <li class="right-items">
+          <a href="#"
+            ><i class="fa-solid fa-cart-shopping"><span>0</span></i
+            >Cart</a
+          >
+        </li>
+      </ul>
     </nav>
 
     <main>
-        <h1>Thank you for your purchase!</h1>
-        <h2>Your order has been confirmed</h2>
-        <div class="tick">
-            <i class="fa-solid fa-circle-check"></i>
-        </div>
+      <h1>Thank you for your purchase!</h1>
+      <h2>Your order has been confirmed</h2>
+      <div class="tick">
+        <i class="fa-solid fa-circle-check"></i>
+      </div>
     </main>
 
     <footer>
-        <footer>
-            <div class="footer-container">
-                <div class="footer-info">
-                    <div class="footer-top">
-                        <div class="footer-logo">
-                            <img src="logo/VelvetSkin logo_Rityta 1 copy.png" alt="Your Logo" />
-                        </div>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-info">
+            <div class="footer-top">
+              <div class="footer-logo">
+                <img
+                  src="logo/VelvetSkin logo_Rityta 1 copy.png"
+                  alt="Your Logo"
+                />
+              </div>
 
-                        <div class="footer-search">
-                            <input type="text" id="search" placeholder="Enter email address" />
-                            <button id="subscribe">Subscribe</button>
-                        </div>
+              <div class="footer-search">
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="Enter email address"
+                />
+                <button id="subscribe">Subscribe</button>
+              </div>
 
-                        <div class="footer-social">
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-tiktok"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                    </div>
-                </div>
+              <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <div class="footer-text-container">
-                <div class="footer-column">
-                    <h4>Shop</h4>
-                    <p>All products</p>
-                </div>
+        <div class="footer-text-container">
+          <div class="footer-column">
+            <h4>Shop</h4>
+            <p>All products</p>
+          </div>
 
-                <div class="footer-column">
-                    <h4>About</h4>
-                    <p>About us</p>
-                    <p>FAQ</p>
-                </div>
+          <div class="footer-column">
+            <h4>About</h4>
+            <p>About us</p>
+            <p>FAQ</p>
+          </div>
 
-                <div class="footer-column">
-                    <h4>Contact</h4>
-                    <p>Phone number</p>
-                    <p>Email address</p>
-                </div>
-            </div>
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <p>Phone number</p>
+            <p>Email address</p>
+          </div>
+        </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2023 VelvetSkin. All rights reserved.</p>
-                <div class="additional-text">
-                    <p>Privacy policy</p>
-                    <p>Terms of service</p>
-                    <p>Shipping</p>
-                </div>
-            </div>
-        </footer>
+        <div class="footer-bottom">
+          <p>&copy; 2023 VelvetSkin. All rights reserved.</p>
+          <div class="additional-text">
+            <p>Privacy policy</p>
+            <p>Terms of service</p>
+            <p>Shipping</p>
+          </div>
+        </div>
+      </footer>
     </footer>
-</body>
-
+  </body>
 </html>
