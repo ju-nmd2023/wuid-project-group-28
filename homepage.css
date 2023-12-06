@@ -53,6 +53,25 @@ nav a:hover {
   background-color: #f1e3f0;
 }
 
+.fa-cart-shopping {
+  position: relative;
+}
+
+.fa-cart-shopping span {
+  position: absolute;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: #393b65;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: small;
+  top: -15px;
+  right: -50px;
+}
+
 .logo {
   align-items: center;
   width: 180px;
@@ -60,6 +79,43 @@ nav a:hover {
 
 i {
   padding-right: 8px;
+}
+
+/* CART TAB BAR */
+
+.cartTab {
+  width: 400px;
+  background-color: #f1e3f0;
+  color: #393b65;
+  position: fixed;
+  inset: 0 0 0 auto;
+  display: grid;
+  grid-template-rows: 70px 1fr 70px;
+}
+
+.cartTab h1 {
+  padding: 20px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.cartTab .shopping-btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cartTab .shopping-btn button {
+  background-color: #393b65;
+  color: #f1e3f0;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.cartTab .shopping-btn .close {
+  background-color: #a295c8;
+  color: #393b65;
 }
 
 /* Menu Bar*/
