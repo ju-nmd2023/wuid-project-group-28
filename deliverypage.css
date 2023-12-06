@@ -107,7 +107,15 @@ i {
 
 /* Left Side */
 
-.rectangle {
+.container-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.rectangle,
+.rectangle2 {
   display: flex;
   align-items: center;
   width: 420px;
@@ -122,6 +130,10 @@ i {
   border-radius: 5px;
   font-size: 20px;
   padding: 5px;
+}
+
+.rectangle2 {
+  width: 800px;
 }
 
 .circle {
