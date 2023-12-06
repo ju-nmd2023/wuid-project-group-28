@@ -329,12 +329,14 @@ button:hover {
 
 /*Order confirmation*/
 
-.shopping {
+.shopping a {
   display: flex;
   justify-content: center;
-  padding-top: 30px;
-  margin-bottom: 30px;
+  margin: 30px;
   text-align: center;
+  font-size: 28px;
+  color: #393b65;
+  background-color: #e2d8ff;
 }
 
 p1 {
@@ -390,10 +392,31 @@ input[type="email"]::placeholder,
 input[type="phone-number"]::placeholder {
   color: #393b65;
   font-style: italic;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .shop i {
   font-size: 3rem;
   color: #393b65;
+}
+
+hr {
+  width: 27rem;
+}
+
+.textcols {
+  white-space: nowrap;
+  margin-left: 20px;
+}
+.textcols-item {
+  white-space: normal;
+  display: inline-block;
+  width: 15rem;
+  vertical-align: top;
+}
+
+p2 {
+  color: #393b65;
+  font-family: "Open Sans", sans-serif;
+  font-size: 23px;
 }
