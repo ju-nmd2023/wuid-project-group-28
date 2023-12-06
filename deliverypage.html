@@ -65,14 +65,9 @@
     </nav>
 
     <main>
-      <div class="container-top">
-        <div class="rectangle">
-          <div class="circle">1</div>
-          <p>DELIVERY</p>
-        </div>
-        <div class="rectangle2">
-          <p>IN YOUR CART</p>
-        </div>
+      <div class="rectangle">
+        <div class="circle">1</div>
+        <p>DELIVERY</p>
       </div>
       <div class="contact-details"><p>Contact Details</p></div>
       <div class="row">
@@ -111,6 +106,7 @@
             placeholder="Enter address or postcode"
           />
         </div>
+
         <form>
           <label>
             <input type="radio" name="delivery" value="RoyaleMail" />
@@ -133,7 +129,73 @@
             </div>
           </label>
         </form>
-        <button id="proceed-payment-btn">Proceed Payment</button>
+
+        <div class="rectangle2">
+          <div class="circle2">2</div>
+          <p>PAYMENT</p>
+        </div>
+        <div class="row-right">
+          <div class="inputBox">
+            <span>Billing Adress</span>
+            <input
+              type="billing-address"
+              placeholder="Enter billing address..."
+            />
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="InputBox">
+            <img src="homepage img/credit-card-2.png" alt="credit-card" />
+            <span>Credit/Debit card</span>
+          </div>
+
+          <div class="inputBox">
+            <span>Name On The Card</span>
+            <input type="card-name" placeholder="Name on the card" />
+          </div>
+
+          <div class="inputBox">
+            <span>Credit Card Number</span>
+            <input type="card-number" placeholder="1111-2222-3333-4444" />
+          </div>
+
+          <div class="flex">
+            <div class="inputBox">
+              <span>Expiry Date</span>
+              <input type="exp-date" placeholder="00-11" />
+            </div>
+          </div>
+          <div class="inputBox">
+            <span>CVC/CVV</span>
+            <input type="CVC" placeholder="000" />
+          </div>
+        </div>
+
+        <label>
+          <input type="radio" name="payment" value="PayPal" />
+          <div>
+            <span class="title3">PayPal</span>
+            <span class="undertext3"> Single payment of 249,7 SEK </span>
+          </div>
+        </label>
+
+        <label>
+          <input type="radio" name="payment" value="Klarna" />
+          <div>
+            <span class="title4">Klarna</span>
+            <span class="undertext4"> Single payment of 249,7 SEK </span>
+          </div>
+        </label>
+
+        <label>
+          <input type="radio" name="payment" value="Amazon Pay" />
+          <div>
+            <span class="title5">Amazon Pay</span>
+            <span class="undertext5"> Single payment of 249,7 SEK </span>
+          </div>
+        </label>
+        <button id="proceed-payment-btn">Proceed To Checkout</button>
       </div>
     </main>
 
