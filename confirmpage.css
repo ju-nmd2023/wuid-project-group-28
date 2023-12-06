@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-color: #f1e3f084;
+}
+
+/* Header */
+
+.left-items1 {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-start;
+}
+.right-items1 .right-items {
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  float: right;
+  padding: 50px 0;
+}
+nav {
+  background-color: #a295c8;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px; /*create space between text*/
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #393b65;
+}
+nav a:hover {
+  background-color: #f1e3f0;
+}
+
+.logo {
+  align-items: center;
+  width: 180px;
+}
+
+i {
+  padding-right: 8px;
+}
+
+/* Menu Bar*/
+
+.sidebar {
+  position: fixed;
+  top: 0%;
+  left: 0;
+  height: 100vh; /*mean full height of the screen*/
+  width: 250px;
+  z-index: 999;
+  background-color: #f1e3f027;
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li {
+  width: 100%;
+}
+
+/* Making Header Responsive*/
+
+@media (max-width: 850px) {
+  .left-items1 {
+    display: none;
+  }
+  .right-items1 {
+    display: none;
+  }
+  .right-items {
+    padding-left: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+/* Main Section */
+h1,
+h2 {
+  padding: 20px;
+  color: #393b65;
+  text-align: center;
+}
+h1 {
+  padding-top: 100px;
+}
+
+.tick {
+  display: flex;
+  justify-content: center;
+  color: #393b65;
+  font-size: 5rem;
+  padding-bottom: 2rem;
+}
+/* Footer */
+
+footer {
+  background-color: #a295c8;
+  padding: 40px 0;
+  color: #393b65;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo img {
+  width: 200px;
+  height: auto;
+}
+
+.footer-text-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #f1e3f0;
+}
+
+.footer-column {
+  flex: 1;
+  margin-left: 40px;
+}
+
+h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer-text-container p {
+  margin-top: 10px;
+  color: #393b65;
+}
+
+.footer-social {
+  display: flex;
+  margin-top: 100px;
+  margin-left: -150px;
+}
+
+.footer-social a {
+  color: #393b65;
+  margin-right: 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer-social a:hover {
+  color: #393b65;
+}
+
+.footer-bottom {
+  display: flex;
+  text-align: right;
+  padding-top: 20px;
+  padding-right: 20px;
+  border-top: 1px solid #f1e3f0;
+  font-size: 12px;
+}
+
+.additional-text {
+  display: flex;
+  color: #393b65;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.additional-text p {
+  margin-right: 20px;
+}
+
+footer {
+  background-color: #a295c8;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-info {
+  display: flex;
+  color: #fff;
+}
+
+.footer-search {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"]::placeholder {
+  color: #393b65;
+}
+
+input[type="text"] {
+  background-color: #a295c8;
+  border: 1px solid;
+  border-radius: 3px;
+  color: #393b65;
+  padding: 5px 10px;
+  margin-left: 450px;
+  width: 300px;
+}
+
+button {
+  background-color: #393b65;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+button:hover {
+  background-color: #393b65; /* used to define the styles for a button when it is being hovered over by the user; that is it changes the background color */
+}
+
+/* Responsive Footer */
+
+@media screen and (max-width: 1200px) {
+  .footer-search input[type="text"] {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-search button {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer-container {
+    flex-direction: column;
+  }
+
+  .footer-top,
+  .footer-bottom {
+    text-align: center;
+  }
+
+  .footer-search {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .footer-search input[type="text"] {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .footer-search button {
+    margin-left: 5px;
+  }
+}
