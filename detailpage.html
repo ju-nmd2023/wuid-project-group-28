@@ -5,86 +5,348 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VelvetSkin</title>
     <link rel="stylesheet" href="detailpage.css" />
+    <script src="detailpage.js" defer></script>
+    <script src="https://kit.fontawesome.com/7790d70cb7.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <nav>
-        <div class="navbar">
-          <ul>
-            <div class="left-items">
-              <a href="">
-                <li>Menu</li>
-              </a>
-              <a href="">
-                <li>About</li>
-              </a>
-              <a href="">
-                <li>Contact</li>
-              </a>
-            </div>
-          </ul>
-          <img src="logo/VelvetSkin logo_Rityta 1 copy.png" class="logo">
-          <ul>
-            <div class="right-items">
-              <a href="">
-                <li>Search</li>
-              </a>
-              <a href="">
-                <li>Account</li>
-              </a>
-              <a href="">
-                <li>Cart</li>
-              </a>
-            </div>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VelvetSkin</title>
-  <link rel="stylesheet" href="detailpage.css" />
-</head>
-
-<body>
-  <header>
     <nav>
-      <div class="navbar">
-        <ul>
-          <div class="left-items">
-            <a href="">
-              <li>Menu</li>
-            </a>
-            <a href="">
-              <li>About</li>
-            </a>
-            <a href="">
-              <li>Contact</li>
-            </a>
-          </div>
-        </ul>
-        <img src="logo/VelvetSkin logo_Rityta 1 copy.png" class="logo">
-        <ul>
-          <div class="right-items">
-            <a href="">
-              <li>Search</li>
-            </a>
-            <a href="">
-              <li>Account</li>
-            </a>
-            <a href="">
-              <li>Cart</li>
-            </a>
-          </div>
-        </ul>
-      </div>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="22"
+              viewBox="0 -960 960 960"
+              width="22"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="productpage.html">Shop</a></li>
+        <li><a href="#Explore">Explore</a></li>
+        <li><a href="#About">About</a></li>
+        <li>
+          <a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a>
+        </li>
+        <li><a href="#">Costumer Service</a></li>
+        <li><a href="#">Login/Sign in</a></li>
+      </ul>
+      <ul>
+        <li onclick="showSidebar()">
+          <a href="#"><i class="fa-solid fa-bars"></i>Menu</a>
+        </li>
+        <li class="left-items1"><a href="#">About</a></li>
+        <li class="left-items1"><a href="#">Contact</a></li>
+      </ul>
+      <img src="logo/VelvetSkin logo_Rityta 1 copy.png" class="logo" />
+      <ul>
+        <li class="right-items1">
+          <a href="#Search"
+            ><i class="fa-solid fa-magnifying-glass"></i>Search</a
+          >
+        </li>
+        <li class="right-items1">
+          <a href="#Account"><i class="fa-regular fa-user"></i>Account</a>
+        </li>
+        <li class="right-items">
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i>Cart</a>
+        </li>
+      </ul>
     </nav>
-  </header>
 
-  <main></main>
-  <footer></footer>
-</body>
 
+
+    <main>
+      <div class="main-top">
+        <div class="product-container">
+         <div class="product-thumbnail">
+            <img src="detailpage-img/img-1.jpg" onclick="myFunction(this)">
+            <img src="detailpage-img/img-2.jpg" onclick="myFunction(this)">
+            <img src="detailpage-img/img-3.jpg" onclick="myFunction(this)">
+          </div>
+
+          <div class="img-container">
+           <img id="imageBox" src="detailpage-img/img-1.jpg">
+          </div>
+        </div>
+
+        <div class="product-details">
+          <h1 class="product-title">High-Spreadability Fluid</h1>
+          <h2 class="product-unit">45 ml</h2>
+          <p class="product-price">89,90 SEK</p>
+          <div class="product-ratings">
+            <span class="star">&#9733</span>
+            <span class="star">&#9733</span>
+            <span class="star">&#9733</span>
+            <span class="star">&#9733</span>
+            <span class="star">&#9733</span>
+            <p class="review-count">(53 reviews)</p>
+          </div>
+          <p class="free-delivery">FREE DELIVERY for orders over 250 kr</p>
+          <button type="button" class="atc-button">Add to cart</button>
+        </div>
+        
+      </div>
+    
+     
+
+      <div class="main-bottom">
+        <div class="product-description">
+          <h2 class="description-title">Product description</h2>
+          <p class="product-text">With a crisp and enjoyable touch, the texture is light and transient. A simple mixture of two primary components, pure eliac acid and hyaluronic acid, which have long been recognized for their therapeutic benefits. EVERY SKIN TYPE IS SUITABLE FOR THIS LINE (dry, mixed, and oily).</p><br>
+          <p class="product-text">The nutritional, restorative, and antioxidant qualities of snail slime. Additionally, it contains film-forming ingredients like proteins, mucopolysaccharides, allantoin, and glycolic acid, which leave skin feeling hydrated, silky, and soft. It also inhibits the development of scars, stretch marks, dark spots, and pimples, as well as the buildup of impurities.</p>
+        </div>
+      </div>
+
+         
+          <div class="ellipse-container">
+            <div class="ellipse-mini">
+              <div class="ellipse">
+               <i class="fa-solid fa-seedling"></i>
+               <p class="ellipse-text">Vegan</p>
+              </div>
+            </div>
+            <div class="ellipse-mini">
+              <div class="ellipse">
+               <i class="fa-solid fa-atom"></i>
+               <p class="ellipse-text">Lifting and Firming</p>
+              </div>
+            </div>
+            <div class="ellipse-mini">
+              <div class="ellipse">
+                <i class="fa-brands fa-pagelines"></i>
+                <p class="ellipse-text">Organic</p>
+              </div>
+            </div> 
+          </div>
+
+          <div class="review-main">
+            <h1 class="review-h1">Reviews</h1>
+          </div>
+
+          <div class="review-container">
+            <div class="review-box">
+              <div class="box-top">
+                <div class="profile">
+                  <i class="fa-regular fa-circle-user"></i>
+                  <div class="username">
+                    <strong>ActiveExplorer123</strong>
+                  </div>
+                </div>
+                <div class="reviews">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+
+              <h3 class="review-title">A PLUS for sensitive skin (older women especially)</h3>
+              <div class="comment">
+                <p>I am pleasantly surprised by this product. I am 50 yrs young, going through menopause and my facial tone has seen better days.Ok so We all know that stress. My face looked shiny, kinda rejuvenated. It's not oily, it's really slick. It's very viscous, slimy consistency. There is no smell, it's not grainy, it is whitish in colour goes on clear rubs right in it takes a minute for it to dry on your face so it's kind of I wanna say tacky, but after it dries on your face, it feels really smooth and it's almost kinda like it tightens your face when it dries, so that was kind of a nice effect. That was a good indication that it was kind of smoothing out the appearance of the large pores that I have.Overall, I would suggest buying this despite the weirdness of it. It's good I have extremely sensitive skin. I have T zone area so I'm part dry part oily.Exceeded my expectations overall. I'm very happy with my purchase and I will leave reviews for the other products that I bought from this brand on the other pages.</p>
+              </div>
+            </div>
+
+            <div class="review-box">
+              <div class="box-top">
+                <div class="profile">
+                  <i class="fa-regular fa-circle-user"></i>
+                  <div class="username">
+                    <strong>GymGoddess45</strong>
+                  </div>
+                </div>
+                <div class="reviews">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+              </div>
+
+              <h3 class="review-title">Excellent moisturizer for sensitive skin</h3>
+              <div class="comment">
+                <p>This has become my new daily moisturizer. My skin is pretty sensitive and prone to break outs and irritation. Due to this reason I cannot really use any fragrance in my skincare/makeup routines. I was already using the snail mucin power essence when I decided to add this into my routine.The texture is unlike any moisturizer I have ever used before. Instead of feeling velvety it has almost a sticky/slimey consistency. I know that may be off putting to some but you definitely get used to it. A little goes a long way and it leave my skin feeling soft and smooth with no hint of irritation.I have found this moisturizer to be very hydrating while still feeling more like a water cream or gel moisturizer so I imagine it will also work really well for people who are on the oily side too.I am really enjoying the cos rx line and am looking forward to adding more of their products into my regimen.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pagination-main">
+            <div class="pagination-container">
+              <div class="pagination">
+                <button class="btn1" onclick="backBtn()">prev</button>
+                  <ul class="pagination-ul">
+                    <li class="link active" value="1" onclick="activeLink()">1</li>
+                    <li class="link" value="2" onclick="activeLink()">2</li>
+                    <li class="link" value="3" onclick="activeLink()">3</li>
+                    <li class="link" value="4" onclick="activeLink()">4</li>
+                    <li class="link" value="5" onclick="activeLink()">5</li>
+                  </ul>
+                <button class="btn2" onclick="nextBtn()">next</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="trio-container">
+            <div class="trio-group">
+              <div class="bestsellers-group">
+                <p class="clickable">
+                  <a href="#">Best Sellers</a>
+                </p>
+                <p class="clickable">
+                  <a href="#">New Arrivals</a>
+                </p>
+                <p class="clickable">
+                  <a href="#">Sale</a>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="minislidecontainer-wrap">
+            <img src="homepage img/back.png" id="backBtn">
+            <div class="minislide-container">
+              <div class="box">
+                <div class="slide-image">
+                  <img src="homepage img/RJ 1.webp" alt="1">
+                  <div class="overlay">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                  </div>
+                </div>
+                <div class="detail-box">
+                  <div class="type">
+                    <a href="#">Rituals of Jing set</a>
+                  </div>
+                  <a href="#" class="price">599 SEK</a>
+                </div>
+              </div>
+              <div class="box">
+                <div class="slide-image">
+                  <img src="homepage img/RJ 2.jpg" alt="2">
+                  <div class="overlay">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                  </div>
+                </div>
+                <div class="detail-box">
+                  <div class="type">
+                    <a href="#">The Ordinary set</a>
+                  </div>
+                  <a href="#" class="price">450 SEK</a>
+                </div>
+              </div>
+              <div class="box">
+                <div class="slide-image">
+                  <img src="homepage img/RJ 3.jpeg" alt="3">
+                  <div class="overlay">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                  </div>
+                </div>
+                <div class="detail-box">
+                  <div class="type">
+                    <a href="#">Rituals of Namaste</a>
+                    <span>Skin brightening face exfoilator</span>
+                  </div>
+                  <a href="#" class="price">189 SEK</a>
+                </div>
+              </div>
+              <div class="box">
+                <div class="slide-image">
+                  <img src="homepage img/RJ 4.webp" alt="4">
+                  <div class="overlay">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                  </div>
+                </div>
+                <div class="detail-box">
+                  <div class="type">
+                    <span>236ml</span>
+                    <a href="#">CeraVe</a>
+                  </div>
+                  <a href="#" class="price">147 SEK</a>
+                </div>
+              </div>
+              <div class="box">
+                <div class="slide-image">
+                  <img src="homepage img/RJ 5.webp" alt="5">
+                  <div class="overlay">
+                    <a href="#" class="buy-btn">Buy Now</a>
+                  </div>
+                </div>
+                <div class="detail-box">
+                  <div class="type">
+                    <span>200ml</span>
+                    <a href="#">La Roche-Posay</a>
+                    <span>Effaclar</span>
+                  </div>
+                  <a href="#" class="price">150 SEK</a>
+                </div>
+              </div>
+            </div>
+            <img src="homepage img/next.png" id="nextBtn">
+          </div>
+          
+
+
+
+
+    </main>
+
+  <footer>
+     <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img src="logo/VelvetSkin logo_Rityta 1 copy.png" alt="Your Logo">
+            </div>
+            <div class="footer-search">
+              <input
+                type="text"
+                id="search"
+                placeholder="Enter email address"
+              />
+              <button id="subscribe">Subscribe</button>
+            </div>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-text-container">
+        <div class="footer-column">
+          <h4>Shop</h4>
+          <p>All products</p>
+        </div>
+        <div class="footer-column">
+          <h4>About</h4>
+          <p>About us</p>
+          <p>FAQ</p>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <p>Phone number</p>
+          <p>Email address</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 VelvetSkin. All rights reserved.</p>
+        <div class="additional-text">
+          <p>Privacy policy</p>
+          <p>Terms of service</p>
+          <p>Shipping</p>
+        </div>
+      </div>
+    </footer>
+  </footer>
+  
+  </body>
 </html>
