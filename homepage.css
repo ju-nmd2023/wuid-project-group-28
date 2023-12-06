@@ -53,6 +53,25 @@ nav a:hover {
   background-color: #f1e3f0;
 }
 
+.fa-cart-shopping {
+  position: relative;
+}
+
+.fa-cart-shopping span {
+  position: absolute;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: #393b65;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: small;
+  top: -15px;
+  right: -50px;
+}
+
 .logo {
   align-items: center;
   width: 180px;
@@ -108,10 +127,10 @@ i {
 /* Main Slider */
 
 @keyframes fadein {
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 }
@@ -162,8 +181,8 @@ i {
 
 /* Buttons */
 
-#buynow,
-#details {
+.buynow,
+.details {
   background-color: #393b65;
   border: none;
   border-radius: 6px;
@@ -209,8 +228,8 @@ i {
     font-size: 15px;
   }
 
-  #buynow,
-  #details {
+  .buynow,
+  .details {
     padding: 8px 18px;
     font-size: 0.7rem;
   }
@@ -224,8 +243,8 @@ i {
   .info-detail p {
     font-size: 15px;
   }
-  #buynow,
-  #details {
+  .buynow,
+  .details {
     padding: 5px 15px;
     font-size: 0.7rem;
   }
@@ -239,8 +258,8 @@ i {
   .info-detail p {
     font-size: 12px;
   }
-  #buynow,
-  #details {
+  .buynow,
+  .details {
     padding: 4px 12px;
     font-size: 0.55rem;
   }
@@ -430,16 +449,7 @@ i {
 
 .slide-image:hover .overlay {
   visibility: visible;
-  animation: fade 0.5s;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+  animation: fadein 0.5s;
 }
 
 /* Responsive styles */

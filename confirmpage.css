@@ -102,7 +102,7 @@ i {
   width: 100%;
 }
 
-/* Making Header Responsiv*/
+/* Making Header Responsive*/
 
 @media (max-width: 850px) {
   .left-items1 {
@@ -123,252 +123,23 @@ i {
 }
 
 /* Main Section */
-
-.rectangle,
-.rectangle2 {
-  display: flex;
-  align-items: center;
-  width: 420px;
-  margin-left: 20px;
-  margin-top: 50px;
-  margin-bottom: 35px;
-  background-color: #a295c8;
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
+h1,
+h2 {
+  padding: 20px;
+  color: #393b65;
   text-align: center;
-  border: 2px solid #a295c8;
-  border-radius: 5px;
-  font-size: 20px;
-  padding: 5px;
+}
+h1 {
+  padding-top: 100px;
 }
 
-.circle,
-.circle2 {
-  width: 20px;
-  height: 20px;
-  margin-right: 15px;
-  background-color: #393b65;
-  border-radius: 50%;
-  font-size: 15px;
+.tick {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.contact-details p {
   color: #393b65;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
-  margin-left: 20px;
-  margin-bottom: 55px;
-  font-size: 19px;
+  font-size: 5rem;
+  padding-bottom: 2rem;
 }
-
-.row .inputBox {
-  margin: 20px;
-}
-
-.row .inputBox span {
-  margin-bottom: 10px;
-  display: block;
-  font-family: "Open Sans", sans-serif;
-  color: #393b65;
-  font-size: 15px;
-  font-weight: 400;
-}
-.row .inputBox .span1 span {
-  margin-left: 3px;
-  margin-top: 5px;
-  margin-bottom: 10px;
-  display: block;
-  font-family: "Open Sans", sans-serif;
-  color: #393b65;
-  font-size: 10px;
-  font-weight: 400;
-}
-
-input[type="email"],
-input[type="phone-number"],
-input[type="name"],
-input[type="lastname"],
-input[type="country"],
-input[type="address-or-postcode"],
-input[type="billing-address"] {
-  background-color: #f1e3f0;
-  border: 1px solid #f1e3f0;
-  border-radius: 3px;
-  padding: 10px 10px;
-  width: 400px;
-  font-size: 13px;
-}
-
-input[type="email"]::placeholder,
-input[type="phone-number"]::placeholder,
-input[type="name"]::placeholder,
-input[type="lastname"]::placeholder,
-input[type="country"]::placeholder,
-input[type="address-or-postcode"]::placeholder,
-input[type="billing-address"]::placeholder {
-  color: #393b65;
-  font-style: italic;
-  font-size: 13px;
-}
-
-.deliveryadd {
-  color: #393b65;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
-  margin-left: 20px;
-  font-size: 19px;
-}
-
-.delivery-option {
-  color: #393b65;
-  font-family: "Open Sans", sans-serif;
-  font-weight: 500;
-  margin-left: 20px;
-  font-size: 19px;
-}
-
-#proceed-payment-btn {
-  color: #fff;
-  background-color: #393b65;
-  width: 420px;
-  height: 40px;
-  font-size: 20px;
-  font-family: "Open Sans", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 500px;
-  margin-bottom: 50px;
-  margin-top: 50px;
-  cursor: pointer;
-}
-
-#proceed-payment-btn:hover {
-  color: #393b65;
-  background-color: #f1e3f0;
-}
-
-input[type="radio"] {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-
-label {
-  margin-top: 20px;
-  margin-left: 20px;
-  width: 390px;
-  background-color: #f1e3f0;
-  color: #393b65;
-  font-family: "Open Sans", sans-serif;
-  cursor: pointer;
-  display: flex;
-  gap: 5px;
-  border: 3px solid #f1e3f0;
-  padding: 16px 12.5px;
-  border-radius: 3px;
-}
-
-label > div {
-  display: flex;
-  flex-direction: column;
-}
-
-.title1,
-.title2,
-.title3,
-.title4,
-.title5 {
-  display: block;
-  margin-bottom: 10px;
-  font-size: larger;
-}
-
-.undertext1,
-.undertext2,
-.undertext3,
-.undertext4,
-.undertext5,
-.undertext6 {
-  display: block;
-  margin-bottom: 2px;
-  font-size: 15px;
-}
-
-.price,
-.price2 {
-  display: block;
-  font-size: small;
-}
-
-/* Right Side */
-
-.info-card {
-  background-color: #f1e3f0;
-  border-radius: 3px;
-  padding: 10px 10px;
-  width: 400px;
-  font-size: 13px;
-  margin-left: 20px;
-}
-
-input[type="card-name"],
-input[type="card-number"] {
-  background-color: #fff;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  padding: 10px 10px;
-  width: 250px;
-  font-size: 13px;
-}
-
-input[type="card-name"]::placeholder,
-input[type="card-number"]::placeholder,
-input[type="exp-date"]::placeholder,
-input[type="CVC"]::placeholder {
-  color: #393b65;
-  font-style: italic;
-  font-size: 13px;
-}
-
-input[type="exp-date"],
-input[type="CVC"] {
-  background-color: #fff;
-  border: 1px solid #fff;
-  border-radius: 3px;
-  padding: 10px 10px;
-  width: 50px;
-  font-size: 13px;
-}
-
-.info-card .InputBox {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.InputBox img {
-  margin-left: 20px;
-  width: 50px;
-  height: auto;
-}
-
-.info-card .InputBox span {
-  color: #393b65;
-}
-
-.container-main {
-  display: flex;
-}
-.row2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 30px;
-}
-
 /* Footer */
 
 footer {
