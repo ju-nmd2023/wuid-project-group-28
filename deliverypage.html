@@ -1,285 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VelvetSkin</title>
+    <link rel="stylesheet" href="deliverypage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="deliverypage.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VelvetSkin</title>
-  <link rel="stylesheet" href="deliverypage.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-  <script src="deliverypage.js" defer></script>
-</head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="22"
+              viewBox="0 -960 960 960"
+              width="22"
+            >
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+              />
+            </svg>
+          </a>
+        </li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="productpage.html">Shop</a></li>
+        <li><a href="#Explore">Explore</a></li>
+        <li><a href="#About">About</a></li>
+        <li>
+          <a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a>
+        </li>
+        <li><a href="#">Costumer Service</a></li>
+        <li><a href="#">Login/Sign in</a></li>
+      </ul>
+      <ul>
+        <li onclick="showSidebar()">
+          <a href="#"><i class="fa-solid fa-bars"></i>Menu</a>
+        </li>
+        <li class="left-items1"><a href="#">About</a></li>
+        <li class="left-items1"><a href="#">Contact</a></li>
+      </ul>
+      <img src="logo/VelvetSkin logo_Rityta 1 copy.png" class="logo" />
+      <ul>
+        <li class="right-items1">
+          <a href="#Search"
+            ><i class="fa-solid fa-magnifying-glass"></i>Search</a
+          >
+        </li>
+        <li class="right-items1">
+          <a href="#Account"><i class="fa-regular fa-user"></i>Account</a>
+        </li>
+        <li class="right-items">
+          <a href="#"
+            ><i class="fa-solid fa-cart-shopping"><span>0</span></i
+            >Cart</a
+          >
+        </li>
+      </ul>
+    </nav>
 
-<body>
-  <nav>
-    <ul class="sidebar">
-      <li onclick="hideSidebar()">
-        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22">
-            <path
-              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-          </svg>
-        </a>
-      </li>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="productpage.html">Shop</a></li>
-      <li><a href="#Explore">Explore</a></li>
-      <li><a href="#About">About</a></li>
-      <li>
-        <a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a>
-      </li>
-      <li><a href="#">Costumer Service</a></li>
-      <li><a href="#">Login/Sign in</a></li>
-    </ul>
-    <ul>
-      <li onclick="showSidebar()">
-        <a href="#"><i class="fa-solid fa-bars"></i>Menu</a>
-      </li>
-      <li class="left-items1"><a href="#">About</a></li>
-      <li class="left-items1"><a href="#">Contact</a></li>
-    </ul>
-    <img src="logo/VelvetSkin logo_Rityta 1 copy.png" class="logo" />
-    <ul>
-      <li class="right-items1">
-        <a href="#Search"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
-      </li>
-      <li class="right-items1">
-        <a href="#Account"><i class="fa-regular fa-user"></i>Account</a>
-      </li>
-      <li class="right-items">
-        <a href="#"><i class="fa-solid fa-cart-shopping"><span>0</span></i>Cart</a>
-      </li>
-    </ul>
-  </nav>
-
-  <main>
-    <div class="row2">
-      <div class="1column">
-        <div class="rectangle">
-          <div class="circle">1</div>
-          <p>DELIVERY</p>
-        </div>
-        <div class="contact-details">
-          <p>Contact Details</p>
-        </div>
-        <div class="row">
-          <div class="inputBox">
-            <span>Email Address</span>
-            <input type="email" placeholder="Example@example.com" />
+    <main>
+      <div class="row2">
+        <div class="column1">
+          <div class="rectangle">
+            <div class="circle">1</div>
+            <p>DELIVERY</p>
           </div>
+          <div class="contact-details">
+            <p>Contact Details</p>
+          </div>
+          <div class="row">
+            <div class="inputBox">
+              <span>Email Address</span>
+              <input type="email" placeholder="Example@example.com" />
+            </div>
 
-<<<<<<< HEAD
-        <div class="deliveryadd"><p>Delivery Address</p></div>
+            <div class="inputBox">
+              <span>Telephone</span>
+              <input type="phone-number" placeholder="Phone Number" />
+              <div class="span1">
+                <span
+                  >The phone number is required for delivery purpose only</span
+                >
+              </div>
+            </div>
 
-        <div class="inputBox">
-          <span>First Name</span>
-          <input type="name" placeholder="First Name" />
-        </div>
-        <div class="inputBox">
-          <span>Last Name</span>
-          <input type="lastname" placeholder="Last Name" />
-        </div>
+            <div class="deliveryadd">
+              <p>Delivery Address</p>
+            </div>
 
-        <div class="inputBox">
-          <span>Country</span>
-          <input type="country" placeholder="Select a country" />
-        </div>
-        <div class="inputBox">
-          <span>Address</span>
-          <input
-            type="address-or-postcode"
-            placeholder="Enter address or postcode"
-          />
-        </div>
+            <div class="inputBox">
+              <span>First Name</span>
+              <input type="name" placeholder="First Name" />
+            </div>
+            <div class="inputBox">
+              <span>Last Name</span>
+              <input type="lastname" placeholder="Last Name" />
+            </div>
 
-        <form>
-          <label>
-            <input type="radio" name="delivery" value="RoyaleMail" />
-            <div>
-              <span class="title1">Royal Mail Standard</span>
-              <span class="undertext1">
-                Fully Tracked Service, Delivery 2-3 days from despatch
-              </span>
-              <span class="price">40 SEK</span>
-=======
-          <div class="inputBox">
-            <span>Telephone</span>
-            <input type="phone-number" placeholder="Phone Number" />
-            <div class="span1">
-              <span>The phone number is required for delivery purpose only</span>
->>>>>>> e5516d5337c77af88827a328505fdf08bb414911
+            <div class="inputBox">
+              <span>Country</span>
+              <input type="country" placeholder="Select a country" />
+            </div>
+            <div class="inputBox">
+              <span>Address</span>
+              <input
+                type="address-or-postcode"
+                placeholder="Enter address or postcode"
+              />
+            </div>
+
+            <form>
+              <label>
+                <input type="radio" name="delivery" value="RoyaleMail" />
+                <div>
+                  <span class="title1">Royal Mail Standard</span>
+                  <span class="undertext1">
+                    Fully Tracked Service, Delivery 2-3 days from despatch
+                  </span>
+                  <span class="price">50 SEK</span>
+                </div>
+              </label>
+              <label>
+                <input type="radio" name="delivery" value="PostNord" />
+                <div>
+                  <span class="title2">PostNord</span>
+                  <span class="undertext2">
+                    Fully Tracked Service, Delivery 10-12 days from despatch
+                  </span>
+                  <span class="price2">Free</span>
+                </div>
+              </label>
+            </form>
+          </div>
+        </div>
+        <div class="column2">
+          <div class="rectangle2">
+            <div class="circle2">2</div>
+            <p>PAYMENT</p>
+          </div>
+          <div class="row-right">
+            <div class="inputBox">
+              <span>Billing Adress</span>
+              <input
+                type="billing-address"
+                placeholder="Enter billing address..."
+              />
             </div>
           </div>
 
-          <div class="deliveryadd">
-            <p>Delivery Address</p>
-          </div>
+          <div class="info-card">
+            <div class="InputBox">
+              <img src="homepage img/credit-card-2.png" alt="credit-card" />
+              <span>Credit/Debit card</span>
+            </div>
 
-          <div class="inputBox">
-            <span>First Name</span>
-            <input type="name" placeholder="First Name" />
-          </div>
-          <div class="inputBox">
-            <span>Last Name</span>
-            <input type="lastname" placeholder="Last Name" />
-          </div>
+            <div class="inputBox">
+              <span>Name On The Card</span>
+              <input type="card-name" placeholder="Name on the card" />
+            </div>
 
-          <div class="inputBox">
-            <span>Country</span>
-            <input type="country" placeholder="Select a country" />
-          </div>
-          <div class="inputBox">
-            <span>Address</span>
-            <input type="address-or-postcode" placeholder="Enter address or postcode" />
-          </div>
+            <div class="inputBox">
+              <span>Credit Card Number</span>
+              <input type="card-number" placeholder="1111-2222-3333-4444" />
+            </div>
 
+            <div class="flex">
+              <div class="inputBox">
+                <span>Expiry Date</span>
+                <input type="exp-date" placeholder="00-11" />
+              </div>
+            </div>
+            <div class="inputBox">
+              <span>CVC/CVV</span>
+              <input type="CVC" placeholder="000" />
+            </div>
+          </div>
           <form>
             <label>
-              <input type="radio" name="delivery" value="RoyaleMail" />
+              <input type="radio" name="payment" value="PayPal" />
               <div>
-                <span class="title1">Royal Mail Standard</span>
-                <span class="undertext1">
-                  Fully Tracked Service, Delivery 2-3 days from despatch
-                </span>
-                <span class="price">50 SEK</span>
+                <span class="title3">PayPal</span>
+                <span class="undertext3"> Single payment of 249,7 SEK </span>
               </div>
             </label>
+
             <label>
-              <input type="radio" name="delivery" value="PostNord" />
+              <input type="radio" name="payment" value="Klarna" />
               <div>
-                <span class="title2">PostNord</span>
-                <span class="undertext2">
-                  Fully Tracked Service, Delivery 10-12 days from despatch
-                </span>
-                <span class="price2">Free</span>
+                <span class="title4">Klarna</span>
+                <span class="undertext4"> Single payment of 249,7 SEK </span>
+              </div>
+            </label>
+
+            <label>
+              <input type="radio" name="payment" value="Amazon Pay" />
+              <div>
+                <span class="title5">Amazon Pay</span>
+                <span class="undertext5"> Single payment of 249,7 SEK </span>
               </div>
             </label>
           </form>
         </div>
       </div>
-      <div class="2column">
-        <div class="rectangle2">
-          <div class="circle2">2</div>
-          <p>PAYMENT</p>
-        </div>
-        <div class="row-right">
-          <div class="inputBox">
-            <span>Billing Adress</span>
-            <input type="billing-address" placeholder="Enter billing address..." />
-          </div>
-        </div>
+      <button class="proceed-payment-btn">
+        <a href="confirmtpage.html">Proceed To Checkout</a>
+      </button>
+    </main>
 
-        <div class="info-card">
-          <div class="InputBox">
-            <img src="homepage img/credit-card-2.png" alt="credit-card" />
-            <span>Credit/Debit card</span>
-          </div>
-
-          <div class="inputBox">
-            <span>Name On The Card</span>
-            <input type="card-name" placeholder="Name on the card" />
-          </div>
-
-          <div class="inputBox">
-            <span>Credit Card Number</span>
-            <input type="card-number" placeholder="1111-2222-3333-4444" />
-          </div>
-
-          <div class="flex">
-            <div class="inputBox">
-              <span>Expiry Date</span>
-              <input type="exp-date" placeholder="00-11" />
-            </div>
-          </div>
-          <div class="inputBox">
-            <span>CVC/CVV</span>
-            <input type="CVC" placeholder="000" />
-          </div>
-        </div>
-        <form>
-          <label>
-            <input type="radio" name="payment" value="PayPal" />
-            <div>
-              <span class="title3">PayPal</span>
-              <span class="undertext3"> Single payment of 249,7 SEK </span>
-            </div>
-          </label>
-
-          <label>
-            <input type="radio" name="payment" value="Klarna" />
-            <div>
-              <span class="title4">Klarna</span>
-              <span class="undertext4"> Single payment of 249,7 SEK </span>
-            </div>
-          </label>
-
-          <label>
-            <input type="radio" name="payment" value="Amazon Pay" />
-            <div>
-              <span class="title5">Amazon Pay</span>
-              <span class="undertext5"> Single payment of 249,7 SEK </span>
-            </div>
-          </label>
-        </form>
-
-      </div>
-    </div>
-    <button id="proceed-payment-btn">Proceed To Checkout</button>
-    </div>
-  </main>
-
-  <footer>
     <footer>
-      <div class="footer-container">
-        <div class="footer-info">
-          <div class="footer-top">
-            <div class="footer-logo">
-              <img src="logo/VelvetSkin logo_Rityta 1 copy.png" alt="Your Logo" />
-            </div>
+      <footer>
+        <div class="footer-container">
+          <div class="footer-info">
+            <div class="footer-top">
+              <div class="footer-logo">
+                <img
+                  src="logo/VelvetSkin logo_Rityta 1 copy.png"
+                  alt="Your Logo"
+                />
+              </div>
 
-            <div class="footer-search">
-              <input type="text" id="search" placeholder="Enter email address" />
-              <button id="subscribe">Subscribe</button>
-            </div>
+              <div class="footer-search">
+                <input
+                  type="text"
+                  id="search"
+                  placeholder="Enter email address"
+                />
+                <button id="subscribe">Subscribe</button>
+              </div>
 
-            <div class="footer-social">
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-tiktok"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <div class="footer-social">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="footer-text-container">
-        <div class="footer-column">
-          <h4>Shop</h4>
-          <p>All products</p>
+        <div class="footer-text-container">
+          <div class="footer-column">
+            <h4>Shop</h4>
+            <p>All products</p>
+          </div>
+
+          <div class="footer-column">
+            <h4>About</h4>
+            <p>About us</p>
+            <p>FAQ</p>
+          </div>
+
+          <div class="footer-column">
+            <h4>Contact</h4>
+            <p>Phone number</p>
+            <p>Email address</p>
+          </div>
         </div>
 
-        <div class="footer-column">
-          <h4>About</h4>
-          <p>About us</p>
-          <p>FAQ</p>
+        <div class="footer-bottom">
+          <p>&copy; 2023 VelvetSkin. All rights reserved.</p>
+          <div class="additional-text">
+            <p>Privacy policy</p>
+            <p>Terms of service</p>
+            <p>Shipping</p>
+          </div>
         </div>
-
-        <div class="footer-column">
-          <h4>Contact</h4>
-          <p>Phone number</p>
-          <p>Email address</p>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <p>&copy; 2023 VelvetSkin. All rights reserved.</p>
-        <div class="additional-text">
-          <p>Privacy policy</p>
-          <p>Terms of service</p>
-          <p>Shipping</p>
-        </div>
-      </div>
+      </footer>
     </footer>
-  </footer>
-</body>
-
+  </body>
 </html>
