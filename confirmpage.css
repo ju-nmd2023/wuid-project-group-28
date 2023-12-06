@@ -328,15 +328,30 @@ button:hover {
 }
 
 /*Order confirmation*/
-
-.shopping a {
+.shopping-btn {
+  color: #fff;
+  background-color: #393b65;
+  width: 420px;
+  height: 40px;
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin: 30px;
-  text-align: center;
-  font-size: 28px;
+  margin-left: 500px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.shopping-btn a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.shopping-btn:hover {
   color: #393b65;
-  background-color: #e2d8ff;
+  background-color: #f1e3f0;
 }
 
 p1 {
@@ -405,7 +420,7 @@ hr {
 }
 
 .textcols {
-  white-space: nowrap;
+  white-space: nowrap; /*text wrap ban*/
   margin-left: 20px;
 }
 .textcols-item {
