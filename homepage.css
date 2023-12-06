@@ -278,6 +278,8 @@ i {
 }
 
 .undertext p {
+  padding-left: 100px;
+  padding-right: 100px;
   color: #393b65;
   text-align: center;
   font-family: "Open Sans", sans-serif;
