@@ -540,13 +540,13 @@ p2 {
     padding-left: 130px;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 600px) {
   .row {
     grid-template-columns: repeat(1, 1fr);
   }
   .frscln {
-    margin-left: 20px;
-    width: 350px;
+    margin-left: 10px;
+    width: 320px;
   }
   .seccln {
     margin-left: 20px;
