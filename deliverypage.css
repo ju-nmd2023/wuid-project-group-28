@@ -104,7 +104,7 @@ i {
 
 /* Making Header Responsiv*/
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   .left-items1 {
     display: none;
   }
@@ -113,6 +113,21 @@ i {
   }
   .right-items {
     padding-left: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .left-items1 {
+    display: none;
+  }
+  .right-items1 {
+    display: none;
+  }
+  .right-items {
+    padding-left: 0;
+  }
+  li a {
+    padding-left: 15px;
   }
 }
 
@@ -462,6 +477,55 @@ input[type="CVC"] {
   .proceed-payment-btn {
     margin-left: 75px;
     margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .row2 {
+    grid-template-columns: 1fr; /* single column for smaller screens */
+  }
+
+  .container-main {
+    flex-direction: column; /* flex direction for smaller screens */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column1,
+  .column2 {
+    margin-left: 0px;
+    margin-right: 0;
+  }
+
+  .proceed-payment-btn {
+    margin-left: 80px;
+    margin-right: auto;
+    width: 240px;
+    height: 40px;
+    font-size: 17px;
+  }
+
+  .info-card {
+    width: 337px;
+  }
+
+  input[type="email"],
+  input[type="phone-number"],
+  input[type="name"],
+  input[type="lastname"],
+  input[type="country"],
+  input[type="address-or-postcode"],
+  input[type="billing-address"] {
+    width: 337px;
+  }
+
+  .rectangle,
+  .rectangle2 {
+    width: 345px;
+  }
+
+  label {
+    width: 327px;
   }
 }
 
