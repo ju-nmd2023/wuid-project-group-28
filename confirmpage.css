@@ -526,7 +526,7 @@ p2 {
   margin-left: 300px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .shopping-btn {
     margin-left: 150px;
   }
@@ -538,6 +538,12 @@ p2 {
   }
   .right-items {
     padding-left: 130px;
+  }
+  .right-items {
+    padding-left: 0;
+  }
+  li a {
+    padding-left: 15px;
   }
 }
 @media screen and (max-width: 600px) {
