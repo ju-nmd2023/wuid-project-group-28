@@ -116,7 +116,7 @@ i {
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 400px) {
   .left-items1 {
     display: none;
   }
@@ -125,6 +125,9 @@ i {
   }
   .right-items {
     padding-left: 0;
+  }
+  li a {
+    padding-left: 15px;
   }
 }
 
@@ -259,7 +262,7 @@ i {
     font-size: 0.55rem;
   }
 }
-@media (max-width: 455px) {
+@media (max-width: 400px) {
   .info-detail {
     top: 7%;
     padding: 100px 10px;
@@ -305,10 +308,10 @@ i {
   margin-bottom: 100px;
 }
 
-@media only screen and (max-width: 455px) {
+@media only screen and (max-width: 400px) {
   .velvetskin-title {
     font-size: 17px;
-    margin-top: -320px;
+    margin-top: -350px;
   }
 
   .undertext p {
@@ -523,16 +526,17 @@ i {
     margin: 48px;
   }
 }
-@media only screen and (max-width: 455px) {
+@media only screen and (max-width: 400px) {
   .box {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 50px;
   }
   #backBtn,
   #nextBtn {
     width: 40px;
     cursor: pointer;
-    margin: 18px;
+    margin: 4px;
   }
 }
 
