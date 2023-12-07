@@ -526,25 +526,55 @@ p2 {
   margin-left: 300px;
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 800px) {
   .shopping-btn {
-    margin-left: 100px;
+    margin-left: 150px;
   }
   .frscln {
-    margin-left: 80px;
+    margin-left: 35px;
   }
   .seccln {
-    margin-left: -50px;
+    margin-left: -40px;
+  }
+  .right-items {
+    padding-left: 130px;
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 420px) {
   .row {
     grid-template-columns: repeat(1, 1fr);
   }
   .frscln {
     margin-left: 20px;
+    width: 350px;
   }
   .seccln {
     margin-left: 20px;
+  }
+  .right-items {
+    padding-left: 0;
+  }
+  li a {
+    padding-left: 15px;
+  }
+  .shopping-btn {
+    margin-left: 50px;
+    width: 300px;
+  }
+  .frscln {
+    margin-left: 0px;
+  }
+  .seccln {
+    margin-left: 80px;
+  }
+  input[type="email"],
+  input[type="phone-number"] {
+    width: 350px;
+  }
+  hr {
+    width: 350px;
+  }
+  p2 {
+    font-size: 18px;
   }
 }
