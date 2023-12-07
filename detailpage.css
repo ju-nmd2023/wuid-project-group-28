@@ -72,6 +72,24 @@ i {
   padding-right: 8px;
 }
 
+.fa-cart-shopping {
+  position: relative;
+}
+.fa-cart-shopping span {
+  position: absolute;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: #393b65;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: small;
+  top: -15px;
+  right: -50px;
+}
+
 /*MENU BAR*/
 
 .sidebar {
@@ -115,6 +133,9 @@ i {
 @media (max-width: 600px) {
   .sidebar {
     width: 100%;
+  }
+  .right-items {
+    padding-left: 0px;
   }
 }
 
