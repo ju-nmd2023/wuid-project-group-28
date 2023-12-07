@@ -569,12 +569,19 @@ p2 {
   }
   input[type="email"],
   input[type="phone-number"] {
-    width: 350px;
+    width: 300px;
   }
   hr {
     width: 350px;
   }
   p2 {
     font-size: 18px;
+  }
+  p1,
+  h2 {
+    margin-right: 0;
+  }
+  .textcols-item {
+    width: 150px;
   }
 }
