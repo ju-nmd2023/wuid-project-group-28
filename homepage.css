@@ -175,7 +175,7 @@ i {
 
 .info-detail {
   position: absolute;
-  top: 30%;
+  top: 450px;
   padding: 15px 100px;
 }
 
@@ -246,7 +246,7 @@ i {
 
 @media (max-width: 600px) {
   .info-detail {
-    top: 30%;
+    top: 500px;
     padding: 20px 20px;
   }
   .info-detail h2 {
@@ -254,17 +254,17 @@ i {
   }
 
   .info-detail p {
-    font-size: 12px;
+    font-size: 15px;
   }
   .buynow,
   .details {
     padding: 4px 12px;
-    font-size: 0.55rem;
+    font-size: 0.7rem;
   }
 }
 @media (max-width: 400px) {
   .info-detail {
-    top: 7%;
+    top: 130px;
     padding: 100px 10px;
   }
   .info-detail h2 {

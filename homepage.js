@@ -13,16 +13,19 @@ const slides = document.querySelectorAll(".main-slider .slide");
 let currentSlide = 0;
 
 function showSlide(n) {
-  slides[n].style.display = "block";
+  slides[n].style.display =
+    "block"; /* this way each slide is visually distinct and takes up the full width of it's container in a presentation */
 }
 
 function hideSlide(n) {
-  slides[n].style.display = "none";
+  slides[n].style.display = "none"; /* hiding it from the view */
 }
 
 function nextSlide() {
   hideSlide(currentSlide);
-  currentSlide = (currentSlide + 1) % slides.length;
+  currentSlide =
+    (currentSlide + 1) %
+    slides.length; /* this makes a smooth loop;the code line adds 1 to the current slide number and wraps back to the first slide if it is a the end of the slider (last pic of the slider in this case) */
   showSlide(currentSlide);
 }
 
