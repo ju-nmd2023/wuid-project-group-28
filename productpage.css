@@ -376,21 +376,7 @@ h2 {
 .filters .contentBox.active .label::before {
   content: "-";
 }
-@media screen and (max-width: 1340px) {
-  .filters {
-    margin-right: 0;
-  }
-}
 
-@media screen and (max-width: 1200px) {
-  .filters {
-    font-size: 15px;
-    max-width: 200px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-}
 /*Sort by*/
 
 select {
@@ -546,6 +532,24 @@ h1 {
   font-size: 25px;
   border-radius: 4px;
 }
+
+/*Responsive site*/
+
+@media screen and (max-width: 1340px) {
+  .filters {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .filters {
+    font-size: 15px;
+    max-width: 200px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 1340px) {
   .cards {
     grid-template-columns: repeat(3, 1fr);
@@ -578,5 +582,37 @@ h1 {
 @media screen and (max-width: 600px) {
   .cards {
     grid-template-columns: repeat(1, 1fr);
+    margin-left: -140px;
+  }
+  .filters {
+    margin-left: -40px;
+    width: 9rem;
+    font-size: 12px;
+  }
+  select {
+    font-size: 15px;
+    width: 80px;
+    margin-left: 0;
+    height: 27px;
+    padding: 0;
+  }
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+  .card__prices {
+    font-size: 12x;
+  }
+  .card__price {
+    font-size: 10px;
+  }
+  .card__add {
+    font-size: 10px;
+  }
+  .card__title {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 15px;
   }
 }
