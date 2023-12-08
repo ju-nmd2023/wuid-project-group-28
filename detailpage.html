@@ -9,6 +9,8 @@
     <script src="https://kit.fontawesome.com/7790d70cb7.js" crossorigin="anonymous"></script>
   </head>
   <body>
+
+
     <nav>
       <ul class="sidebar">
         <li onclick="hideSidebar()">
@@ -59,11 +61,14 @@
     </nav>
 
 
+    <!--Code for .product-thumbnail
+    How To Make Image Gallery In HTML CSS JavaScript | Create Image Gallery In HTML Website
+    source: (https://www.youtube.com/watch?v=EoOK-YG-C1o&ab_channel=GreatStack)-->
 
     <main>
       <div class="main-top">
         <div class="product-container">
-         <div class="product-thumbnail">
+          <div class="product-thumbnail">
             <img src="detailpage-img/img-1.jpg" onclick="myFunction(this)">
             <img src="detailpage-img/img-2.jpg" onclick="myFunction(this)">
             <img src="detailpage-img/img-3.jpg" onclick="myFunction(this)">
@@ -103,32 +108,36 @@
           <p class="product-text">The nutritional, restorative, and antioxidant qualities of snail slime. Additionally, it contains film-forming ingredients like proteins, mucopolysaccharides, allantoin, and glycolic acid, which leave skin feeling hydrated, silky, and soft. It also inhibits the development of scars, stretch marks, dark spots, and pimples, as well as the buildup of impurities.</p>
         </div>
       </div>
-
-         
-          <div class="ellipse-container">
-            <div class="ellipse-mini">
-              <div class="ellipse">
-               <i class="fa-solid fa-seedling"></i>
-              </div>
-              <p class="ellipse-text">Vegan</p>
+      
+      
+       <div class="ellipse-container">
+          <div class="ellipse-mini">
+            <div class="ellipse">
+              <i class="fa-solid fa-seedling"></i>
             </div>
-            <div class="ellipse-mini">
-              <div class="ellipse">
-               <i class="fa-solid fa-atom"></i>
-              </div>
-               <p class="ellipse-text">Lifting and Firming</p>
-            </div>
-            <div class="ellipse-mini">
-              <div class="ellipse">
-                <i class="fa-brands fa-pagelines"></i>
-              </div>
-               <p class="ellipse-text">Organic</p>
-            </div> 
+            <p class="ellipse-text">Vegan</p>
           </div>
+          <div class="ellipse-mini">
+            <div class="ellipse">
+              <i class="fa-solid fa-atom"></i>
+            </div>
+            <p class="ellipse-text">Lifting and Firming</p>
+          </div>
+          <div class="ellipse-mini">
+            <div class="ellipse">
+              <i class="fa-brands fa-pagelines"></i>
+            </div>
+            <p class="ellipse-text">Organic</p>
+          </div> 
+        </div>
 
           <div class="review-main">
             <h1 class="review-h1">Reviews</h1>
           </div>
+
+      <!--Code for .review-container inspired by
+      Responsive Customer Reviews on Website Only Using HTML and CSS
+      Source: (https://www.youtube.com/watch?v=O-QUBZuZlXM&ab_channel=Going-ToInternet)-->
 
           <div class="review-container">
             <div class="review-box">
@@ -178,6 +187,10 @@
             </div>
           </div>
 
+          <!--Code for .pagination-main
+          How To Make Pagination In Website Using HTML CSS And JavaScript
+          Source: (https://www.youtube.com/watch?v=Ejdir7bwCpk&t=5s&ab_channel=GreatStack)-->
+
           <div class="pagination-main">
             <div class="pagination-container">
               <div class="pagination">
@@ -193,107 +206,6 @@
               </div>
             </div>
           </div>
-
-          <div class="trio-container">
-            <div class="trio-group">
-              <div class="bestsellers-group">
-                <p class="clickable">
-                  <a href="#">Best Sellers</a>
-                </p>
-                <p class="clickable">
-                  <a href="#">New Arrivals</a>
-                </p>
-                <p class="clickable">
-                  <a href="#">Sale</a>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="minislidecontainer-wrap">
-            <img src="homepage img/back.png" id="backBtn">
-            <div class="minislide-container">
-              <div class="box">
-                <div class="slide-image">
-                  <img src="homepage img/RJ 1.webp" alt="1">
-                  <div class="overlay">
-                    <a href="#" class="buy-btn">Buy Now</a>
-                  </div>
-                </div>
-                <div class="detail-box">
-                  <div class="type">
-                    <a href="#">Rituals of Jing set</a>
-                  </div>
-                  <a href="#" class="price">599 SEK</a>
-                </div>
-              </div>
-              <div class="box">
-                <div class="slide-image">
-                  <img src="homepage img/RJ 2.jpg" alt="2">
-                  <div class="overlay">
-                    <a href="#" class="buy-btn">Buy Now</a>
-                  </div>
-                </div>
-                <div class="detail-box">
-                  <div class="type">
-                    <a href="#">The Ordinary set</a>
-                  </div>
-                  <a href="#" class="price">450 SEK</a>
-                </div>
-              </div>
-              <div class="box">
-                <div class="slide-image">
-                  <img src="homepage img/RJ 3.jpeg" alt="3">
-                  <div class="overlay">
-                    <a href="#" class="buy-btn">Buy Now</a>
-                  </div>
-                </div>
-                <div class="detail-box">
-                  <div class="type">
-                    <a href="#">Rituals of Namaste</a>
-                    <span>Skin brightening face exfoilator</span>
-                  </div>
-                  <a href="#" class="price">189 SEK</a>
-                </div>
-              </div>
-              <div class="box">
-                <div class="slide-image">
-                  <img src="homepage img/RJ 4.webp" alt="4">
-                  <div class="overlay">
-                    <a href="#" class="buy-btn">Buy Now</a>
-                  </div>
-                </div>
-                <div class="detail-box">
-                  <div class="type">
-                    <span>236ml</span>
-                    <a href="#">CeraVe</a>
-                  </div>
-                  <a href="#" class="price">147 SEK</a>
-                </div>
-              </div>
-              <div class="box">
-                <div class="slide-image">
-                  <img src="homepage img/RJ 5.webp" alt="5">
-                  <div class="overlay">
-                    <a href="#" class="buy-btn">Buy Now</a>
-                  </div>
-                </div>
-                <div class="detail-box">
-                  <div class="type">
-                    <span>200ml</span>
-                    <a href="#">La Roche-Posay</a>
-                    <span>Effaclar</span>
-                  </div>
-                  <a href="#" class="price">150 SEK</a>
-                </div>
-              </div>
-            </div>
-            <img src="homepage img/next.png" id="nextBtn">
-          </div>
-          
-
-
-
 
     </main>
 

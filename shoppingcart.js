@@ -12,6 +12,8 @@ function hideSidebar() {
 
 /* QUANTITY CONTROLLER*/
 
+/* Code was created with the help of ChatGPT */
+
 document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll('.quantity-controller button').forEach(button => {
       button.addEventListener('click', function() {

@@ -124,7 +124,7 @@ i {
   }
 
   .right-items {
-    padding-left: 80px;
+    padding-left: 10px;
   }
 
   .logo {
@@ -239,6 +239,8 @@ h2 {
 
 .quantity-controller {
   margin-right: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .right-container {
@@ -413,7 +415,7 @@ h2 {
   border-top: 1px solid #393b65;
 }
 
-@media screen and(max-width: 600px) {
+@media screen and (max-width: 600px) {
   .shopcart-container{
     flex-direction: column;
   }
@@ -424,18 +426,23 @@ h2 {
     margin: 0;
     padding: 10px 0;
   }
+
+  .free-del{
+    padding: 10px 10px;
+  }
+
+  .product-img{
+    width: 20%;
+  }
+
+  .promo-code-container{
+    margin: 10px 10px;
+  }
+
+  .summary-container{
+    margin: 10px 10px;
+  }
 }
-
-
-/*TO DO
-- fix@media for shopping cart
--@media mini slider
--cite everything, find all resources
--indentations sit properly
-- connect product page to detailproduct
-- quickly learn the js and othre funky elements for presentation
--presentation
-*/
 
 /*FOOTER*/
 

@@ -1,3 +1,10 @@
+/* <!--Code for .product-thumbnail
+    How To Make Image Gallery In HTML CSS JavaScript | Create Image Gallery In HTML Website
+    source: (https://www.youtube.com/watch?v=EoOK-YG-C1o&ab_channel=GreatStack)-->
+*/
+
+/*THUMBNAIL*/
+
 function myFunction(productThumbnail) {
     var fullImg = document.getElementById("imageBox");
     fullImg.src = productThumbnail.src;
@@ -16,6 +23,10 @@ function hideSidebar() {
     const sidebar = document.querySelector(".sidebar");
     sidebar.style.display = "none";
 }
+
+/*<!--Code for .pagination-main
+How To Make Pagination In Website Using HTML CSS And JavaScript
+Source: (https://www.youtube.com/watch?v=Ejdir7bwCpk&t=5s&ab_channel=GreatStack)-->*/
 
 /* PAGINATION */    
 
@@ -51,7 +62,4 @@ function nextBtn(){
         link[currentValue-1].classList.add("active");
     }
 }
-
-
-/* MINISLIDER */
 

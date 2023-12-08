@@ -124,7 +124,7 @@ i {
   }
 
   .right-items {
-    padding-left: 80px;
+    padding-left: 10px;
   }
 
   .logo {
@@ -143,6 +143,10 @@ i {
 /*MAIN*/
 
 /*product images*/
+
+/*Code for .product-thumbnail
+    How To Make Image Gallery In HTML CSS JavaScript | Create Image Gallery In HTML Website
+    source: (https://www.youtube.com/watch?v=EoOK-YG-C1o&ab_channel=GreatStack)*/
 
 .product-thumbnail img {
   height: 150px;
@@ -188,6 +192,7 @@ i {
   flex-wrap: wrap;
 }
 
+/*Some lines were written inspired by ChatGPT*/
 @media screen and (max-width: 600px) {
   .product-container {
     flex-direction: column;
@@ -223,7 +228,7 @@ i {
 }
 
 /*Product details*/
-/*change background color accordingly*/
+
 .product-details {
   background-color: transparent;
   padding: 20px;
@@ -384,6 +389,10 @@ i {
 
 /*REVIEWS*/
 
+/*Code for .review-container inspired by
+      Responsive Customer Reviews on Website Only Using HTML and CSS
+      Source: (https://www.youtube.com/watch?v=O-QUBZuZlXM&ab_channel=Going-ToInternet)*/
+
 .review-main {
   display: flex;
   justify-content: center;
@@ -477,6 +486,10 @@ i {
 
 /*PAGINATION*/
 
+/*Code for .pagination-main
+  How To Make Pagination In Website Using HTML CSS And JavaScript
+  Source: (https://www.youtube.com/watch?v=Ejdir7bwCpk&t=5s&ab_channel=GreatStack)*/
+
 .pagination-main {
   display: flex;
   align-items: center;
@@ -549,201 +562,6 @@ i {
   }
 }
 
-/*BEST SELLERS SECTION*/
-
-.trio-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-
-.trio-group {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  border-bottom: 0.8px solid #393b65;
-}
-
-.bestsellers-group p {
-  display: inline;
-  margin: 10px;
-  cursor: pointer;
-}
-
-.bestsellers-group a {
-  text-decoration: none;
-  color: #393b65;
-}
-
-.bestsellers-group p a:hover {
-  color: #a295c8;
-}
-
-.minislide-container {
-  width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-}
-
-.minislide-container::-webkit-scrollbar {
-  display: none;
-}
-
-.minislidecontainer-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px auto;
-}
-
-#backBtn,
-#nextBtn {
-  width: 50px;
-  cursor: pointer;
-  margin: 40px;
-}
-
-.box {
-  width: 300px;
-  box-sizing: border-box;
-  border-radius: 10px;
-  overflow: hidden;
-  margin-bottom: 100px;
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 10px;
-  display: inline-block;
-  vertical-align: top;
-  transition: transform 0.3 ease;
-}
-
-.slide-image {
-  height: 320px;
-  position: relative;
-}
-
-.slide-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-
-.detail-box {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  box-sizing: border-box;
-  font-family: "Open Sans", sans-serif;
-  background-color: #fff;
-}
-
-.type {
-  display: flex;
-  flex-direction: column;
-}
-
-.type a {
-  color: #393b65;
-  margin: 5px 0px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  padding-right: 8px;
-  text-decoration: none;
-}
-
-.type span {
-  color: #393b65;
-  font-size: small;
-  font-family: "open sans", sans-serif;
-}
-
-.price {
-  color: #393b65;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0.5px;
-}
-
-.overlay {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  background-color: #f1e3f0a1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.buy-btn {
-  width: 160px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f1e3f0;
-  color: #393b65;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-family: "Open Sans", sans-serif;
-  border-radius: 20px;
-  box-shadow: 2px 2px 30px #00000033;
-  text-decoration: none;
-}
-
-.buy-btn:hover {
-  color: #f1e3f0;
-  background-color: #393b65;
-  transition: all ease 0.3s;
-}
-
-.overlay {
-  visibility: hidden;
-}
-
-.slide-image:hover .overlay {
-  visibility: visible;
-  animation: fade 0.5s;
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@media only screen and(max-width: 1200px) {
-  .box {
-    margin-left: 1px;
-    margin-right: 1px;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .box {
-    margin-left: 13px;
-    margin-right: 13px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .box {
-    margin-left: 1px;
-    margin-right: 1px;
-  }
-}
 
 /*FOOTER*/
 
