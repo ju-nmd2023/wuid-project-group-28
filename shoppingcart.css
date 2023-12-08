@@ -131,13 +131,11 @@ i {
 }
 
 .almost-free-dev {
-    background-color: #626491;
+  background-color: #626491;
   color: #fff;
   border-radius: 10px;
   padding: 10px 30px;
 }
-
-
 
 h1,
 h2 {
@@ -152,14 +150,12 @@ h1 {
   padding: 10px 30px;
 }
 
-h2{
-    background-color: #626491;
-    color: #fff;
-    border-radius: 7px;
-    padding: 10px 30px;
+h2 {
+  background-color: #626491;
+  color: #fff;
+  border-radius: 7px;
+  padding: 10px 30px;
 }
-
-
 
 .shopcart-container {
   display: flex;
@@ -219,7 +215,7 @@ h2{
 }
 
 .price {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .quantity-controller {
@@ -257,125 +253,138 @@ h2{
 }
 
 #apply-promo {
-    padding: 10px 15px;
-    background-color: #393b65;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    box-sizing: border-box; /* Include padding and border */
-  }
-
-.summary-container{
-    background-color: #a295c8;
-    border-radius: 10px;
-    padding: 20px;
+  padding: 10px 15px;
+  background-color: #393b65;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-sizing: border-box; /* Include padding and border */
 }
 
-.login-prompt{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-    font-size: 20px;
-    padding: 10px 20px;
+.summary-container {
+  background-color: #a295c8;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-.login-points, .signup-points{
-    font-weight: bold;
+.login-prompt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 20px;
 }
 
-.login-text{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
+.login-points,
+.signup-points {
+  font-weight: bold;
 }
 
-.l-s-btns{
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
+.login-text {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
 }
 
-#login-button, #signup-button{
-    padding: 10px 20px;
-    margin: 10px;
+.l-s-btns {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
 }
 
-.order-price{
-    background-color: #f1e3f0;
-    border-radius: 10px;
-    color: #393b65;
+#login-button,
+#signup-button {
+  padding: 10px 20px;
+  margin: 10px;
 }
 
-.subtotal, .delivery, .order-total {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    
+.order-price {
+  background-color: #f1e3f0;
+  border-radius: 10px;
+  color: #393b65;
 }
 
-.subtotal p, .delivery p, .order-total p{
-    padding: 20px;
-    font-style: italic;
-    font-weight: bold;
+.subtotal,
+.delivery,
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.subtotal p,
+.delivery p,
+.order-total p {
+  padding: 20px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .klarna-img {
-    width: 20%;
+  width: 20%;
 }
 
-.klarna-info{
-    display: flex;
-    align-items: center;
-    color: #393b65;
-    font-size: 18px;
+.klarna-info {
+  display: flex;
+  align-items: center;
+  color: #393b65;
+  font-size: 18px;
 }
 
-.klarna-info span{
-    font-weight: bolder;
+.klarna-info span {
+  font-weight: bolder;
 }
 
-.klarna-info p{
-    font-weight: normal;
+.klarna-info p {
+  font-weight: normal;
 }
 
-.klarna-text{
-    display: flex;
-    flex-direction: column;
+.klarna-text {
+  display: flex;
+  flex-direction: column;
 }
 
-.checkout-btns{
-    display: flex;
-    align-items: stretch;
-    flex-direction: column;
+.checkout-btns {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
 }
 
-#checkout-button{
-    margin: 10px;
-    border-radius: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 20px;
+#checkout-button {
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+}
+#checkout-button a {
+  color: inherit;
+  text-decoration: none;
+}
+#checkout-button:hover {
+  color: #393b65;
+  background-color: #f1e3f0;
 }
 
-#paypal-button{
-    margin: 10px;
-    border-radius: 10px;
-    font-size: 30px;
-    font-weight: bold;
-    background-color: #f1e3f0;
-    color: #393b65;
-    padding: 20px;
+#paypal-button {
+  margin: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #f1e3f0;
+  color: #393b65;
+  padding: 20px;
 }
 
 .terms {
-    background-color: #a295c8;
-    padding: 10px;
-    width: 100%;
-    text-align: center;
-    border-top: 1px solid #393b65;
+  background-color: #a295c8;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #393b65;
 }
 
 /*FOOTER*/
