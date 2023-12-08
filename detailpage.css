@@ -121,12 +121,9 @@ i {
     display: none;
   }
 
-  .right-items {
-    padding-left: 80px;
-  }
-
-  .logo {
-    max-width: 100px;
+    .right-items {
+      padding-left: 9rem;
+    }
   }
 }
 

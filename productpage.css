@@ -334,8 +334,8 @@ h2 {
 
 .filters {
   justify-content: left;
-  width: 15rem;
-  font-size: 20px;
+  width: 12rem;
+  font-size: 18px;
   color: #393b65;
   cursor: pointer; /*appearance of the hand when hovering on the element(to show that the element is active)*/
   margin-right: 120px;
@@ -383,13 +383,13 @@ h2 {
 /*Sort by*/
 
 select {
-  width: 15rem;
+  width: 13rem;
   padding: 10px;
   border: 1px solid #ccc;
   appearance: none;
   outline: none;
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 18px;
   color: #393b65;
   background-color: #a295c8;
 }
@@ -515,11 +515,11 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* auto-fill for grid-container */
   width: 50%;
-  max-width: 1000px; /* container's size */
+  max-width: 1500px; /* container's size */
   justify-content: center;
   justify-items: right; /* card's position */
-  column-gap: 30px;
-  row-gap: 50px;
+  column-gap: 20px;
+  row-gap: 30px;
   padding-top: 50px;
 }
 .show {
@@ -539,12 +539,6 @@ h1 {
 
 /*Responsive site*/
 
-@media screen and (max-width: 1340px) {
-  .filters {
-    margin-right: 0;
-  }
-}
-
 @media screen and (max-width: 1200px) {
   .filters {
     font-size: 15px;
@@ -555,6 +549,9 @@ h1 {
   }
 }
 @media screen and (max-width: 1340px) {
+  .filters {
+    margin-right: 0;
+  }
   .cards {
     grid-template-columns: repeat(3, 1fr);
     justify-content: left;
@@ -584,6 +581,9 @@ h1 {
   }
   .filters {
     margin-left: -30px;
+  }
+  .right-items {
+    padding-left: 9rem;
   }
 }
 @media screen and (max-width: 600px) {
