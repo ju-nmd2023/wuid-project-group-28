@@ -131,7 +131,7 @@ i {
     display: none;
   }
   .right-items {
-    padding-left: 80px;
+    padding-left: 9rem;
   }
 }
 
@@ -540,7 +540,7 @@ p2 {
     padding-left: 130px;
   }
   .right-items {
-    padding-left: 0;
+    padding-left: 9rem;
   }
   li a {
     padding-left: 15px;
