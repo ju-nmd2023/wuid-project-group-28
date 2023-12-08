@@ -103,7 +103,7 @@ i {
 }
 /*Responsive header*/
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
   .left-items1 {
     display: none;
   }
@@ -111,7 +111,7 @@ i {
     display: none;
   }
   .right-items {
-    padding-left: 80px;
+    padding-left: 9rem;
   }
 }
 @media (max-width: 600px) {
@@ -582,9 +582,6 @@ h1 {
   }
   .filters {
     margin-left: -30px;
-  }
-  .right-items {
-    padding-left: 9rem;
   }
 }
 @media screen and (max-width: 600px) {
