@@ -124,11 +124,7 @@ i {
   }
 
   .right-items {
-    padding-left: 80px;
-  }
-
-  .logo {
-    max-width: 100px;
+    padding-left: 9rem;
   }
 }
 
@@ -414,18 +410,18 @@ h2 {
 }
 
 @media screen and(max-width: 600px) {
-  .shopcart-container{
+  .shopcart-container {
     flex-direction: column;
   }
 
-  .left-container, .right-container {
+  .left-container,
+  .right-container {
     flex: none;
     width: 100%;
     margin: 0;
     padding: 10px 0;
   }
 }
-
 
 /*TO DO
 - fix@media for shopping cart
