@@ -101,6 +101,7 @@ i {
 .sidebar li {
   width: 100%;
 }
+/*Responsive header*/
 
 @media (max-width: 900px) {
   .left-items1 {
