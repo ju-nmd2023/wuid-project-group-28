@@ -64,6 +64,25 @@ nav a:hover {
   background-color: #f1e3f0;
 }
 
+.fa-cart-shopping {
+  position: relative;
+}
+
+.fa-cart-shopping span {
+  position: absolute;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: #393b65;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: small;
+  top: -15px;
+  right: -50px;
+}
+
 .logo {
   align-items: center;
   width: 180px;
@@ -105,11 +124,7 @@ i {
   }
 
   .right-items {
-    padding-left: 80px;
-  }
-
-  .logo {
-    max-width: 100px;
+    padding-left: 9rem;
   }
 }
 
@@ -259,7 +274,11 @@ h2 {
   border: none;
   border-radius: 10px;
   cursor: pointer;
+<<<<<<< HEAD
   box-sizing: border-box; /* Include padding and border */
+=======
+  box-sizing: border-box;
+>>>>>>> 79d762dd62123b4a483da7e9aa9717f13fc1a968
 }
 
 .summary-container {
@@ -359,6 +378,7 @@ h2 {
   font-size: 30px;
   font-weight: bold;
   padding: 20px;
+<<<<<<< HEAD
 }
 #checkout-button a {
   color: inherit;
@@ -369,6 +389,20 @@ h2 {
   background-color: #f1e3f0;
 }
 
+=======
+}
+
+#checkout-button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#checkout-button:hover {
+  color: #393b65;
+  background-color: #f1e3f0;
+}
+
+>>>>>>> 79d762dd62123b4a483da7e9aa9717f13fc1a968
 #paypal-button {
   margin: 10px;
   border-radius: 10px;
@@ -377,6 +411,14 @@ h2 {
   background-color: #f1e3f0;
   color: #393b65;
   padding: 20px;
+<<<<<<< HEAD
+=======
+}
+
+#paypal-button:hover {
+  background-color: #393b65;
+  color: #f1e3f0;
+>>>>>>> 79d762dd62123b4a483da7e9aa9717f13fc1a968
 }
 
 .terms {
@@ -386,6 +428,30 @@ h2 {
   text-align: center;
   border-top: 1px solid #393b65;
 }
+
+@media screen and(max-width: 600px) {
+  .shopcart-container {
+    flex-direction: column;
+  }
+
+  .left-container,
+  .right-container {
+    flex: none;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+  }
+}
+
+/*TO DO
+- fix@media for shopping cart
+-@media mini slider
+-cite everything, find all resources
+-indentations sit properly
+- connect product page to detailproduct
+- quickly learn the js and othre funky elements for presentation
+-presentation
+*/
 
 /*FOOTER*/
 

@@ -111,9 +111,6 @@ i {
   .right-items1 {
     display: none;
   }
-  .right-items {
-    padding-left: 9rem;
-  }
 }
 
 @media (max-width: 400px) {
