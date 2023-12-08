@@ -104,7 +104,7 @@ i {
 
 /* Making Header Responsiv */
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
   .left-items1 {
     display: none;
   }
