@@ -382,7 +382,12 @@ h2 {
 
 #checkout-button a {
   text-decoration: none;
-  color: #fff;
+  color: inherit;
+}
+
+#checkout-button:hover {
+  color: #393b65;
+  background-color: #f1e3f0;
 }
 
 #paypal-button {
@@ -393,6 +398,11 @@ h2 {
   background-color: #f1e3f0;
   color: #393b65;
   padding: 20px;
+}
+
+#paypal-button:hover {
+  background-color: #393b65;
+  color: #f1e3f0;
 }
 
 .terms {
