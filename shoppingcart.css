@@ -278,7 +278,7 @@ h2 {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  box-sizing: border-box; /* Include padding and border */
+  box-sizing: border-box;
 }
 
 .summary-container {
@@ -402,6 +402,30 @@ h2 {
   text-align: center;
   border-top: 1px solid #393b65;
 }
+
+@media screen and(max-width: 600px) {
+  .shopcart-container{
+    flex-direction: column;
+  }
+
+  .left-container, .right-container {
+    flex: none;
+    width: 100%;
+    margin: 0;
+    padding: 10px 0;
+  }
+}
+
+
+/*TO DO
+- fix@media for shopping cart
+-@media mini slider
+-cite everything, find all resources
+-indentations sit properly
+- connect product page to detailproduct
+- quickly learn the js and othre funky elements for presentation
+-presentation
+*/
 
 /*FOOTER*/
 
