@@ -13,6 +13,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f1e3f084;
+  overflow-x: hidden;
 }
 
 
@@ -320,6 +321,7 @@ i {
 }
 
 .ellipse {
+  position: relative;
   width: 80px;
   height: 80px;
   margin: 0 50px;
@@ -329,13 +331,17 @@ i {
 }
 
 .fa-seedling, .fa-atom, .fa-pagelines {
+  position: absolute;
   color: #393b65;
   font-size: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 15px;
   line-height: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
 }
 
 @media screen and (max-width: 600px){
@@ -345,12 +351,9 @@ i {
   }
 }
 
-/*ask why every time I refresh the icons don't sit in the middle*/
-
 .ellipse-text {
   text-align: center;
   color: #393b65;
-  margin-top: 15px;
   font-weight: bold;
 }
 
@@ -371,12 +374,12 @@ i {
 }
 
 .review-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  margin: 20px;
 }
 
 .review-box {
