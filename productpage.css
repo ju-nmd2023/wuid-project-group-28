@@ -6,11 +6,14 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  width: 100%;
   min-height: 100vh;
   font-family: "Open Sans", sans-serif;
   background-color: #f1e3f084;
 }
-
+main {
+  width: 100%;
+}
 /*Header*/
 
 .left-items1 {
@@ -53,6 +56,25 @@ nav a:hover {
   background-color: #f1e3f0;
 }
 
+.fa-cart-shopping {
+  position: relative;
+}
+
+.fa-cart-shopping span {
+  position: absolute;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: #393b65;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: small;
+  top: -15px;
+  right: -50px;
+}
+
 .logo {
   align-items: center;
   width: 180px;
@@ -79,8 +101,9 @@ i {
 .sidebar li {
   width: 100%;
 }
+/*Responsive header*/
 
-@media (max-width: 900px) {
+@media (max-width: 850px) {
   .left-items1 {
     display: none;
   }
@@ -88,7 +111,7 @@ i {
     display: none;
   }
   .right-items {
-    padding-left: 80px;
+    padding-left: 9rem;
   }
 }
 @media (max-width: 600px) {
@@ -312,8 +335,8 @@ h2 {
 
 .filters {
   justify-content: left;
-  width: 15rem;
-  font-size: 20px;
+  width: 12rem;
+  font-size: 18px;
   color: #393b65;
   cursor: pointer; /*appearance of the hand when hovering on the element(to show that the element is active)*/
   margin-right: 120px;
@@ -357,31 +380,17 @@ h2 {
 .filters .contentBox.active .label::before {
   content: "-";
 }
-@media screen and (max-width: 1340px) {
-  .filters {
-    margin-right: 0;
-  }
-}
 
-@media screen and (max-width: 1200px) {
-  .filters {
-    font-size: 15px;
-    max-width: 200px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-}
 /*Sort by*/
 
 select {
-  width: 15rem;
+  width: 13rem;
   padding: 10px;
   border: 1px solid #ccc;
   appearance: none;
   outline: none;
   border-radius: 4px;
-  font-size: 20px;
+  font-size: 18px;
   color: #393b65;
   background-color: #a295c8;
 }
@@ -507,16 +516,17 @@ h1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* auto-fill for grid-container */
   width: 50%;
-  max-width: 1000px; /* container's size */
+  max-width: 1500px; /* container's size */
   justify-content: center;
   justify-items: right; /* card's position */
-  column-gap: 30px;
-  row-gap: 50px;
+  column-gap: 20px;
+  row-gap: 30px;
   padding-top: 50px;
 }
 .show {
   position: relative;
   text-align: center;
+  padding-top: 20px;
   padding-bottom: 50px;
   justify-content: right;
 }
@@ -527,7 +537,22 @@ h1 {
   font-size: 25px;
   border-radius: 4px;
 }
+
+/*Responsive site*/
+
+@media screen and (max-width: 1200px) {
+  .filters {
+    font-size: 15px;
+    max-width: 200px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+}
 @media screen and (max-width: 1340px) {
+  .filters {
+    margin-right: 0;
+  }
   .cards {
     grid-template-columns: repeat(3, 1fr);
     justify-content: left;
@@ -547,17 +572,67 @@ h1 {
     font-size: 15px;
   }
 }
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
+    column-gap: 15px;
   }
   select {
     width: 10rem;
+  }
+  .filters {
+    margin-left: -30px;
   }
 }
 @media screen and (max-width: 600px) {
   .cards {
     grid-template-columns: repeat(1, 1fr);
+  }
+  .filters {
+    margin-left: -30px;
+    width: 9rem;
+    font-size: 12px;
+  }
+  select {
+    font-size: 15px;
+    width: 80px;
+    margin-left: 0;
+    height: 27px;
+    padding: 0;
+  }
+  .card {
+    width: 150px;
+    height: 150px;
+  }
+  .card__prices {
+    font-size: 12x;
+  }
+  .card__price {
+    font-size: 10px;
+  }
+  .card__add {
+    font-size: 10px;
+  }
+  .card__title {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  .right-items {
+    padding-left: 0px;
+  }
+  .delivery {
+    font-size: 18px;
+  }
+  li a {
+    padding-left: 15px;
+  }
+  select option {
+    font-size: 10px;
+    width: 10px;
+  }
+  form {
+    position: relative;
   }
 }

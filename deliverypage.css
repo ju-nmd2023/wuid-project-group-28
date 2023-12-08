@@ -104,7 +104,7 @@ i {
 
 /* Making Header Responsiv*/
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
   .left-items1 {
     display: none;
   }
@@ -113,6 +113,21 @@ i {
   }
   .right-items {
     padding-left: 80px;
+  }
+}
+
+@media (max-width: 400px) {
+  .left-items1 {
+    display: none;
+  }
+  .right-items1 {
+    display: none;
+  }
+  .right-items {
+    padding-left: 0;
+  }
+  li a {
+    padding-left: 15px;
   }
 }
 
@@ -192,8 +207,7 @@ input[type="phone-number"],
 input[type="name"],
 input[type="lastname"],
 input[type="country"],
-input[type="address-or-postcode"],
-input[type="billing-address"] {
+input[type="address-or-postcode"] {
   background-color: #f1e3f0;
   border: 1px solid #f1e3f0;
   border-radius: 3px;
@@ -207,8 +221,7 @@ input[type="phone-number"]::placeholder,
 input[type="name"]::placeholder,
 input[type="lastname"]::placeholder,
 input[type="country"]::placeholder,
-input[type="address-or-postcode"]::placeholder,
-input[type="billing-address"]::placeholder {
+input[type="address-or-postcode"]::placeholder {
   color: #393b65;
   font-style: italic;
   font-size: 13px;
@@ -230,7 +243,7 @@ input[type="billing-address"]::placeholder {
   font-size: 19px;
 }
 
-#proceed-payment-btn {
+.proceed-payment-btn {
   color: #fff;
   background-color: #393b65;
   width: 420px;
@@ -246,7 +259,12 @@ input[type="billing-address"]::placeholder {
   cursor: pointer;
 }
 
-#proceed-payment-btn:hover {
+.proceed-payment-btn a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.proceed-payment-btn:hover {
   color: #393b65;
   background-color: #f1e3f0;
 }
@@ -325,6 +343,26 @@ input[type="card-number"] {
   font-size: 13px;
 }
 
+input[type="billing-address"] {
+  background-color: #f1e3f0;
+  border: 1px solid #f1e3f0;
+  border-radius: 3px;
+  padding: 10px 10px;
+  width: 400px;
+  font-size: 13px;
+  margin-left: 20px;
+}
+
+.row-right span {
+  margin-left: 20px;
+}
+
+input[type="billing-address"]::placeholder {
+  color: #393b65;
+  font-style: italic;
+  font-size: 13px;
+}
+
 input[type="card-name"]::placeholder,
 input[type="card-number"]::placeholder,
 input[type="exp-date"]::placeholder,
@@ -344,10 +382,26 @@ input[type="CVC"] {
   font-size: 13px;
 }
 
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  color: #393b65;
+}
+.inputBox span {
+  margin-bottom: 10px;
+}
+
 .info-card .InputBox {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+  align-items: start;
   gap: 20px;
+}
+
+.info-card .InputBox input {
+  width: 250px;
 }
 
 .InputBox img {
@@ -358,15 +412,121 @@ input[type="CVC"] {
 
 .info-card .InputBox span {
   color: #393b65;
+  margin-bottom: 10px;
 }
 
 .container-main {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .row2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 30px;
+}
+.column1 {
+  margin-left: 200px;
+}
+
+@media only screen and (max-width: 1086px) {
+  .column1 {
+    margin-left: 70px;
+  }
+  .proceed-payment-btn {
+    margin-left: 35%;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .column1 {
+    margin-left: 50px;
+  }
+  .proceed-payment-btn {
+    margin-left: 30%;
+  }
+}
+
+@media only screen and (max-width: 842px) {
+  .column1 {
+    margin-left: -20px;
+  }
+  .proceed-payment-btn {
+    margin-left: 30%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .row2 {
+    grid-template-columns: 1fr; /* single column for smaller screens */
+  }
+
+  .container-main {
+    flex-direction: column; /* flex direction for smaller screens */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column1,
+  .column2 {
+    margin-left: 55px;
+    margin-right: auto;
+  }
+
+  .proceed-payment-btn {
+    margin-left: 75px;
+    margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .row2 {
+    grid-template-columns: 1fr; /* single column for smaller screens */
+  }
+
+  .container-main {
+    flex-direction: column; /* flex direction for smaller screens */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .column1,
+  .column2 {
+    margin-left: 0px;
+    margin-right: 0;
+  }
+
+  .proceed-payment-btn {
+    margin-left: 80px;
+    margin-right: auto;
+    width: 240px;
+    height: 40px;
+    font-size: 17px;
+  }
+
+  .info-card {
+    width: 337px;
+  }
+
+  input[type="email"],
+  input[type="phone-number"],
+  input[type="name"],
+  input[type="lastname"],
+  input[type="country"],
+  input[type="address-or-postcode"],
+  input[type="billing-address"] {
+    width: 337px;
+  }
+
+  .rectangle,
+  .rectangle2 {
+    width: 345px;
+  }
+
+  label {
+    width: 327px;
+  }
 }
 
 /* Footer */
