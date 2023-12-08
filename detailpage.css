@@ -64,6 +64,25 @@ nav a:hover {
   background-color: #f1e3f0;
 }
 
+.fa-cart-shopping {
+  position: relative;
+}
+
+.fa-cart-shopping span {
+  position: absolute;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background-color: #393b65;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 50%;
+  font-size: small;
+  top: -15px;
+  right: -50px;
+}
+
 .logo {
   align-items: center;
   width: 180px;
