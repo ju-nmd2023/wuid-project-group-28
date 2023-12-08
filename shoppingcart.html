@@ -1,209 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VelvetSkin</title>
-    <link rel="stylesheet" href="shoppingcart.css" />
-    <script src="shoppingcart.js" defer></script>
-    <script src="https://kit.fontawesome.com/7790d70cb7.js" crossorigin="anonymous"></script>
-</head>
-<body>
-    <nav>
-        <ul class="sidebar">
-          <li onclick="hideSidebar()">
-            <a href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="22"
-                viewBox="0 -960 960 960"
-                width="22"
-              >
-                <path
-                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
-                />
-              </svg>
-            </a>
-          </li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="productpage.html">Shop</a></li>
-          <li><a href="#Explore">Explore</a></li>
-          <li><a href="#About">About</a></li>
-          <li>
-            <a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a>
-          </li>
-          <li><a href="#">Costumer Service</a></li>
-          <li><a href="#">Login/Sign in</a></li>
-        </ul>
-        <ul>
-          <li onclick="showSidebar()">
-            <a href="#"><i class="fa-solid fa-bars"></i>Menu</a>
-          </li>
-          <li class="left-items1"><a href="#">About</a></li>
-          <li class="left-items1"><a href="#">Contact</a></li>
-        </ul>
-        <img src="logo/VelvetSkin logo_Rityta 1 copy.png" class="logo" />
-        <ul>
-          <li class="right-items1">
-            <a href="#Search"
-              ><i class="fa-solid fa-magnifying-glass"></i>Search</a
-            >
-          </li>
-          <li class="right-items1">
-            <a href="#Account"><i class="fa-regular fa-user"></i>Account</a>
-          </li>
-          <li class="right-items">
-            <a href="#"><i class="fa-solid fa-cart-shopping"><span>0</span></i>Cart</a>
-          </li>
-        </ul>
-      </nav>
-  
-      <main>
 
-        <div class="shopcart-title">
-            <h1>Shopping Cart</h1>
-            <h2 class="item-nr">1 Item</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VelvetSkin</title>
+  <link rel="stylesheet" href="shoppingcart.css" />
+  <script src="shoppingcart.js" defer></script>
+  <script src="https://kit.fontawesome.com/7790d70cb7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="22" viewBox="0 -960 960 960" width="22">
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+          </svg>
+        </a>
+      </li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="productpage.html">Shop</a></li>
+      <li><a href="#Explore">Explore</a></li>
+      <li><a href="#About">About</a></li>
+      <li>
+        <a href="#"><i class="fa-solid fa-heart"></i>Wishlist</a>
+      </li>
+      <li><a href="#">Costumer Service</a></li>
+      <li><a href="#">Login/Sign in</a></li>
+    </ul>
+    <ul>
+      <li onclick="showSidebar()">
+        <a href="#"><i class="fa-solid fa-bars"></i>Menu</a>
+      </li>
+      <li class="left-items1"><a href="#">About</a></li>
+      <li class="left-items1"><a href="#">Contact</a></li>
+    </ul>
+    <img src="logo/VelvetSkin logo_Rityta 1 copy.png" class="logo" />
+    <ul>
+      <li class="right-items1">
+        <a href="#Search"><i class="fa-solid fa-magnifying-glass"></i>Search</a>
+      </li>
+      <li class="right-items1">
+        <a href="#Account"><i class="fa-regular fa-user"></i>Account</a>
+      </li>
+      <li class="right-items">
+        <a href="#"><i class="fa-solid fa-cart-shopping"><span>0</span></i>Cart</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <div class="shopcart-title">
+      <h1>Shopping Cart</h1>
+      <h2 class="item-nr">1 Item</h2>
+    </div>
+
+    <div class="shopcart-container">
+
+      <div class="left-container">
+        <div class="free-del">
+          <h3 class="almost-free-dev"><i class="fa-solid fa-bell"></i>Spend 160 SEK more to receive FREE DELIVERY</h3>
         </div>
 
-        <div class="shopcart-container">
+        <div class="cart-item">
+          <img src="detailpage-img/img-1.jpg" class="product-img">
+          <div class="product-details">
+            <p class="product-name">High-Spreadability Fluid </p><br>
+            <p class="ml">45ml</p>
+            <p class="price">89.90 SEK</p>
+          </div>
+          <div class="quantity-controller">
+            <button class="btn-decrease" data-action="decrease">-</button>
+            <span class="product-quantity">1</span>
+            <button class="btn-increase" data-action="increase">+</button>
+          </div>
 
-            <div class="left-container">
-                <div class="free-del">
-                    <h3 class="almost-free-dev"><i class="fa-solid fa-bell"></i>Spend 160 SEK more to receive FREE DELIVERY</h3>
-                </div>
+          <button class="remove-item">X</button>
+        </div>
 
-                <div class="cart-item">
-                    <img src="detailpage-img/img-1.jpg" class="product-img">
-                    <div class="product-details">
-                        <p class="product-name">High-Spreadability Fluid </p><br>
-                        <p class="ml">45ml</p>
-                        <p class="price">89.90 SEK</p>
-                    </div>
-                    <div class="quantity-controller">
-                        <button class="btn-decrease" data-action="decrease">-</button>
-                        <span class="product-quantity">1</span>
-                        <button class="btn-increase" data-action="increase">+</button>
-                    </div>
-                    
-                    <button class="remove-item">X</button>
-                </div>
-                
-                
+
+      </div>
+
+      <div class="right-container">
+
+        <div class="promo-code-container">
+          <input type="text" id="promo-code" placeholder="Enter your promocode" />
+          <button type="button" id="apply-promo">APPLY</button>
+        </div>
+
+        <div class="summary-container">
+          <div class="login-prompt">
+            <div class="login-text">
+              <p class="login-points">Log In</p>
+              <p> to redeem points or</p>
+              <p class="signup-points">Sign up</p>
+              <p> to start earning!</p>
+            </div>
+            <div class="l-s-btns">
+              <button type="button" id="login-button">LOG IN</button>
+              <button type="button" id="signup-button">SIGN UP</button>
             </div>
 
-            <div class="right-container">
+          </div>
 
-                <div class="promo-code-container">
-                  <input type="text" id="promo-code" placeholder="Enter your promocode" />
-                  <button type="button" id="apply-promo">APPLY</button>
-                </div>
-                
-                <div class="summary-container">
-                  <div class="login-prompt">
-                    <div class="login-text">
-                        <p class="login-points">Log In</p><p> to redeem points or</p><p class="signup-points">Sign up</p><p> to start earning!</p>
-                    </div>
-                    <div class="l-s-btns">
-                        <button type="button" id="login-button">LOG IN</button>
-                        <button type="button" id="signup-button">SIGN UP</button>
-                    </div>
-                    
-                  </div>
-                  
-                  <div class="order-price">
-                        <div class="subtotal">
-                          <h3>SUBTOTAL</h3>
-                          <p>89,90 SEK</p>
-                        </div>
-                  
-                        <div class="delivery">
-                            <h3>DELIVERY</h3>
-                            <p>50 SEK</p>
-                        </div>
-                  
-                        <div class="order-total">
-                            <h3>ORDER TOTAL</h3>
-                          <p>139,90 SEK</p>  
-                        </div>
-                  </div>
-                 
-              
-                  <div class="payment-info">
-                        <div class="klarna-info">
-                            <img class="klarna-img" src="detailpage-img/klarna.png" alt="klarna">
-                            <div class="klarna-text">
-                                <p>Pay in 30 days.</p>
-                                <span>Learn more</span>
-                                18+, T&C apply, Credit subject to status.
-                            </div>
-                        </div>
+          <div class="order-price">
+            <div class="subtotal">
+              <h3>SUBTOTAL</h3>
+              <p>89,90 SEK</p>
+            </div>
 
-                        <div class="checkout-btns">
-                            <button type="button" id="checkout-button">
-                              <a href="deliverypage.html">CHECKOUT</a>
-                            </button>
-                            <button type="button" id="paypal-button">Pay Pal CHECKOUT</button>
-                        </div>
-                  </div>
+            <div class="delivery">
+              <h3>DELIVERY</h3>
+              <p>50 SEK</p>
+            </div>
 
-                  <div class="terms">
-                    <p>By proceeding you are agreeing to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a>.</p>
-                  </div>
-                </div>
-            </div>              
-      </main>
+            <div class="order-total">
+              <h3>ORDER TOTAL</h3>
+              <p>139,90 SEK</p>
+            </div>
+          </div>
 
-      <footer>
-        <footer>
-         <div class="footer-container">
-           <div class="footer-info">
-             <div class="footer-top">
-               <div class="footer-logo">
-                 <img src="logo/VelvetSkin logo_Rityta 1 copy.png" alt="Your Logo">
-               </div>
-               <div class="footer-search">
-                 <input
-                   type="text"
-                   id="search"
-                   placeholder="Enter email address"
-                 />
-                 <button id="subscribe">Subscribe</button>
-               </div>
-               <div class="footer-social">
-                 <a href="#"><i class="fab fa-instagram"></i></a>
-                   <a href="#"><i class="fab fa-tiktok"></i></a>
-                   <a href="#"><i class="fab fa-twitter"></i></a>
-                   <a href="#"><i class="fab fa-facebook-f"></i></a>
-               </div>
-             </div>
-           </div>
-         </div>
-   
-         <div class="footer-text-container">
-           <div class="footer-column">
-             <h4>Shop</h4>
-             <p>All products</p>
-           </div>
-           <div class="footer-column">
-             <h4>About</h4>
-             <p>About us</p>
-             <p>FAQ</p>
-           </div>
-           <div class="footer-column">
-             <h4>Contact</h4>
-             <p>Phone number</p>
-             <p>Email address</p>
-           </div>
-         </div>
-         <div class="footer-bottom">
-           <p>&copy; 2023 VelvetSkin. All rights reserved.</p>
-           <div class="additional-text">
-             <p>Privacy policy</p>
-             <p>Terms of service</p>
-             <p>Shipping</p>
-           </div>
-         </div>
-       </footer>
-     </footer>
+
+          <div class="payment-info">
+            <div class="klarna-info">
+              <img class="klarna-img" src="detailpage-img/klarna.png" alt="klarna">
+              <div class="klarna-text">
+                <p>Pay in 30 days.</p>
+                <span>Learn more</span>
+                18+, T&C apply, Credit subject to status.
+              </div>
+            </div>
+
+            <div class="checkout-btns">
+              <button type="button" id="checkout-button">CHECKOUT</button>
+              <button type="button" id="paypal-button">Pay Pal CHECKOUT</button>
+            </div>
+          </div>
+
+          <div class="terms">
+            <p>By proceeding you are agreeing to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy
+                Policy</a>.</p>
+          </div>
+        </div>
+      </div>
+  </main>
+
+  <footer>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-info">
+          <div class="footer-top">
+            <div class="footer-logo">
+              <img src="logo/VelvetSkin logo_Rityta 1 copy.png" alt="Your Logo">
+            </div>
+            <div class="footer-search">
+              <input type="text" id="search" placeholder="Enter email address" />
+              <button id="subscribe">Subscribe</button>
+            </div>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-tiktok"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-text-container">
+        <div class="footer-column">
+          <h4>Shop</h4>
+          <p>All products</p>
+        </div>
+        <div class="footer-column">
+          <h4>About</h4>
+          <p>About us</p>
+          <p>FAQ</p>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <p>Phone number</p>
+          <p>Email address</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 VelvetSkin. All rights reserved.</p>
+        <div class="additional-text">
+          <p>Privacy policy</p>
+          <p>Terms of service</p>
+          <p>Shipping</p>
+        </div>
+      </div>
+    </footer>
+  </footer>
 </body>
+
 </html>
